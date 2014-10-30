@@ -5,6 +5,7 @@
     Private bokstavsky(28) As String 'Bokstavene i alfabetet
 
     Private spillordlengde As Integer 'Lengden på ordet som brukes i denne runden
+    Private bokstaverFunnet As Integer 'Antall bokstaver som er funnet av i spillordet denne runden
 
 
 
