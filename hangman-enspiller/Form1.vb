@@ -31,8 +31,10 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'Fjerner sladd (ta bort denne og gjør det pent senere..)
-        Button3.Visible = False
+        'Viser bokstaver i bokstavsky
+        For i = 11 To 39 'skal vise label 11 til og med label 39
+            Me.Controls("label" & i).Visible = True
+        Next
 
         'Sjekker lengden på ordlisten og laster verdien inn i variabel
         Dim ordlistelengde As Integer
@@ -63,6 +65,8 @@
 
     
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+        'Fjerner bokstaven A fra bokstavsky
+        Label11.Visible = False
         'sjekker om noen av bokstaven A finnes i spillmatrisen 
         For i = 1 To (spillordlengde)
             If spillmatrise(i - 1) = "a" Then
@@ -106,6 +110,7 @@
             End If
         Next
     End Sub
+
 
 
 End Class
