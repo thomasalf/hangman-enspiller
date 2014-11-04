@@ -1,7 +1,7 @@
 ﻿Public Class Form1
 
     Private spillmatrise() As Char 'Ordet som brukes i denne runden
-    Private ordliste(6) As String 'Alle ordene som kan brukes i spillet
+    Private ordliste(10) As String 'Alle ordene som kan brukes i spillet
     Private bokstavsky(28) As String 'Bokstavene i alfabetet
 
     Private spillordlengde As Integer 'Lengden på ordet som brukes i denne runden
@@ -41,15 +41,48 @@
         End If
 
         'sjekker om spilleren er død/hengt
-        If liv = 0 Then
-            MsgBox("Du har tapt og har blitt hengt..")
-        End If
+        Select Case liv
+            Case 8
+                PictureBox1.Visible = True
+            Case 7
+                PictureBox1.Visible = False
+                PictureBox2.Visible = True
+            Case 6
+                PictureBox2.Visible = False
+                PictureBox3.Visible = True
+            Case 5
+                PictureBox3.Visible = False
+                PictureBox4.Visible = True
+            Case 4
+                PictureBox4.Visible = False
+                PictureBox5.Visible = True
+            Case 3
+                PictureBox5.Visible = False
+                PictureBox6.Visible = True
+            Case 2
+                PictureBox6.Visible = False
+                PictureBox7.Visible = True
+            Case 1
+                PictureBox7.Visible = False
+                PictureBox8.Visible = True
+            Case 0
+                PictureBox8.Visible = False
+                PictureBox9.Visible = True
+                MsgBox("Du har tapt og har blitt hengt..")
+        End Select
+
+        'gammel "sjekk om spilleren er død"-kode
+        'If liv = 0 Then
+        'PictureBox1.Visible = False
+        'PictureBox9.Visible = True
+        'MsgBox("Du har tapt og har blitt hengt..")
+        'End If
 
 
     End Function
 
 
-
+    'Laster inn ord i matrise og bokstaver i bokstavsky. Viser tomt bilde.
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'Laster inn ord i ordlistematrisen
         ordliste(0) = "A"
@@ -59,6 +92,10 @@
         ordliste(4) = "ABCDE"
         ordliste(5) = "ABCDEF"
         ordliste(6) = "ABCDEFA"
+        ordliste(7) = "ABCCDGAD"
+        ordliste(8) = "ABHAIJKLM"
+        ordliste(9) = "AABBHHGGAA"
+        ordliste(10) = "BBCCDDKKLLM"
 
         'laster inn bokstavene i alfabetet
         bokstavsky(0) = "A"
@@ -67,9 +104,14 @@
         bokstavsky(3) = "D"
         bokstavsky(4) = "E"
 
+        'viser tomt bilde / bakgrunnsbilde
+        For i = 2 To 9
+            Me.Controls("Picturebox" & i).Visible = False
+        Next
+        PictureBox1.Visible = True
     End Sub
 
-
+    'Starter spillet
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         'Viser bokstaver i bokstavsky
         For i = 11 To 39 'skal vise label 11 til og med label 39
@@ -105,8 +147,8 @@
             Me.Controls("label" & i).Visible = True
         Next
 
-        'setter variabelen "liv" til 10 (som tilsvarer maksimalt antall streker på tegningen)
-        liv = 1 'har satt denne til et annet tall enn 10 for å kunne teste
+        'setter variabelen "liv" til 8 (som tilsvarer maksimalt antall streker på tegningen)
+        liv = 8 'xxx har muligens satt denne til et annet tall enn 8 for å kunne teste
         MsgBox("liv = " & liv)
 
         'setter variabelen bokstaverIgjen lik lengden på spillordet
@@ -231,5 +273,9 @@
 
     Private Sub Label39_Click(sender As Object, e As EventArgs) Handles Label39.Click
         bokstavsjekk("Å", 39)
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        PictureBox9.Visible = True
     End Sub
 End Class
