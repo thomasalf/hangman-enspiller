@@ -9,7 +9,44 @@
     Private liv As Integer 'Antallet liv/streker på tegningen spilleren har til rådighet hver runde
     Private bokstaverIgjen 'Antallet bokstaver som gjenstår å finne denne runden
 
+    'Funksjon som kjøres hver gang en bokstav i bokstavskyen klikkes på
+    Private Function bokstavsjekk(ByVal valgtBokstav As String, valgtLabel As Integer)
+        'Fjerner bokstaven fra bokstavsky
+        Me.Controls("label" & valgtLabel).Visible = False
+        'definerer variabelen antallForekomster
+        Dim antallForekomster As Integer = 0
+        'sjekker om noen av bokstaven finnes i spillmatrisen 
+        For i = 1 To (spillordlengde)
+            If spillmatrise(i - 1) = valgtBokstav Then
+                Me.Controls("label" & i).Text = valgtBokstav 'xxx endre til Caps lock her
+                antallForekomster = antallForekomster + 1
+            End If
+        Next
+        'oppdaterer antall bokstaver som gjenstår før spillet er vunnet
+        bokstaverIgjen = bokstaverIgjen - antallForekomster
 
+        'sjekker om spilleren har vunnet
+        If bokstaverIgjen = 0 Then
+            'fjerner bokstavskyen
+            For i = 11 To 39 'skal skjule label 11 til og med label 39
+                Me.Controls("label" & i).Visible = False
+            Next
+            MsgBox("Du har vunnet!") 'viser vinnerskjermbilde
+
+        End If
+
+        'sjekker om spilleren skal miste liv
+        If antallForekomster = 0 Then
+            liv = liv - 1
+        End If
+
+        'sjekker om spilleren er død/hengt
+        If liv = 0 Then
+            MsgBox("Du har tapt og har blitt hengt..")
+        End If
+
+
+    End Function
 
 
 
@@ -78,190 +115,28 @@
 
     End Sub
 
-    
+
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
-        'Fjerner bokstaven A fra bokstavsky
-        Label11.Visible = False
-        'definerer variabelen antallForekomster
-        Dim antallForekomster As Integer = 0
-        'sjekker om noen av bokstaven A finnes i spillmatrisen 
-        For i = 1 To (spillordlengde)
-            If spillmatrise(i - 1) = "a" Then
-                Me.Controls("label" & i).Text = "A"
-                antallForekomster = antallForekomster + 1
-            End If
-        Next
-        'oppdaterer antall bokstaver som gjenstår før spillet er vunnet
-        bokstaverIgjen = bokstaverIgjen - antallForekomster
-
-        'sjekker om spilleren har vunnet
-        If bokstaverIgjen = 0 Then
-            'fjerner bokstavskyen
-            For i = 11 To 39 'skal skjule label 11 til og med label 39
-                Me.Controls("label" & i).Visible = False
-            Next
-            MsgBox("Du har vunnet!") 'viser vinnerskjermbilde
-
-        End If
-
-        'sjekker om spilleren skal miste liv
-        If antallForekomster = 0 Then
-            liv = liv - 1
-        End If
-
-        'sjekker om spilleren er død/hengt
-        If liv = 0 Then
-            MsgBox("Du har tapt og har blitt hengt..")
-        End If
-
+        bokstavsjekk("a", 11)
     End Sub
 
     Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
-        'Fjerner bokstaven B fra bokstavsky
-        Label12.Visible = False
-        'definerer variabelen antallForekomster
-        Dim antallForekomster As Integer = 0
-        'sjekker om noen av bokstaven B finnes i spillmatrisen 
-        For i = 1 To (spillordlengde)
-            If spillmatrise(i - 1) = "b" Then
-                Me.Controls("label" & i).Text = "B"
-                antallForekomster = antallForekomster + 1
-            End If
-        Next
-        'oppdaterer antall bokstaver som gjenstår før spillet er vunnet
-        bokstaverIgjen = bokstaverIgjen - antallForekomster
-
-        'sjekker om spilleren har vunnet
-        If bokstaverIgjen = 0 Then
-            'fjerner bokstavskyen
-            For i = 11 To 39 'skal skjule label 11 til og med label 39
-                Me.Controls("label" & i).Visible = False
-            Next
-            MsgBox("Du har vunnet!") 'viser vinnerskjermbilde
-
-        End If
-
-        'sjekker om spilleren skal miste liv
-        If antallForekomster = 0 Then
-            liv = liv - 1
-        End If
-
-        'sjekker om spilleren er død/hengt
-        If liv = 0 Then
-            MsgBox("Du har tapt og har blitt hengt..")
-        End If
-
+        bokstavsjekk("b", 12)
     End Sub
 
     Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
-        'Fjerner bokstaven C fra bokstavsky
-        Label13.Visible = False
-        'definerer variabelen antallForekomster
-        Dim antallForekomster As Integer = 0
-        'sjekker om noen av bokstaven C finnes i spillmatrisen 
-        For i = 1 To (spillordlengde)
-            If spillmatrise(i - 1) = "c" Then
-                Me.Controls("label" & i).Text = "C"
-                antallForekomster = antallForekomster + 1
-            End If
-        Next
-        'oppdaterer antall bokstaver som gjenstår før spillet er vunnet
-        bokstaverIgjen = bokstaverIgjen - antallForekomster
-
-        'sjekker om spilleren har vunnet
-        If bokstaverIgjen = 0 Then
-            'fjerner bokstavskyen
-            For i = 11 To 39 'skal skjule label 11 til og med label 39
-                Me.Controls("label" & i).Visible = False
-            Next
-            MsgBox("Du har vunnet!") 'viser vinnerskjermbilde
-
-        End If
-
-        'sjekker om spilleren skal miste liv
-        If antallForekomster = 0 Then
-            liv = liv - 1
-        End If
-
-        'sjekker om spilleren er død/hengt
-        If liv = 0 Then
-            MsgBox("Du har tapt og har blitt hengt..")
-        End If
-
+        bokstavsjekk("c", 13)
     End Sub
 
     Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
-        'Fjerner bokstaven D fra bokstavsky
-        Label14.Visible = False
-        'definerer variabelen antallForekomster
-        Dim antallForekomster As Integer = 0
-        'sjekker om noen av bokstaven D finnes i spillmatrisen 
-        For i = 1 To (spillordlengde)
-            If spillmatrise(i - 1) = "d" Then
-                Me.Controls("label" & i).Text = "D"
-                antallForekomster = antallForekomster + 1
-            End If
-        Next
-        'oppdaterer antall bokstaver som gjenstår før spillet er vunnet
-        bokstaverIgjen = bokstaverIgjen - antallForekomster
-
-        'sjekker om spilleren har vunnet
-        If bokstaverIgjen = 0 Then
-            'fjerner bokstavskyen
-            For i = 11 To 39 'skal skjule label 11 til og med label 39
-                Me.Controls("label" & i).Visible = False
-            Next
-            MsgBox("Du har vunnet!") 'viser vinnerskjermbilde
-
-        End If
-
-        'sjekker om spilleren skal miste liv
-        If antallForekomster = 0 Then
-            liv = liv - 1
-        End If
-
-        'sjekker om spilleren er død/hengt
-        If liv = 0 Then
-            MsgBox("Du har tapt og har blitt hengt..")
-        End If
-
+        bokstavsjekk("d", 14)
     End Sub
 
     Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
-        'Fjerner bokstaven E fra bokstavsky
-        Label15.Visible = False
-        'definerer variabelen antallForekomster
-        Dim antallForekomster As Integer = 0
-        'sjekker om noen av bokstaven E finnes i spillmatrisen 
-        For i = 1 To (spillordlengde)
-            If spillmatrise(i - 1) = "e" Then
-                Me.Controls("label" & i).Text = "E"
-                antallForekomster = antallForekomster + 1
-            End If
-        Next
-        'oppdaterer antall bokstaver som gjenstår før spillet er vunnet
-        bokstaverIgjen = bokstaverIgjen - antallForekomster
+        bokstavsjekk("e", 15)
+    End Sub
 
-        'sjekker om spilleren har vunnet
-        If bokstaverIgjen = 0 Then
-            'fjerner bokstavskyen
-            For i = 11 To 39 'skal skjule label 11 til og med label 39
-                Me.Controls("label" & i).Visible = False
-            Next
-            MsgBox("Du har vunnet!") 'viser vinnerskjermbilde
-
-        End If
-
-        'sjekker om spilleren skal miste liv
-        If antallForekomster = 0 Then
-            liv = liv - 1
-        End If
-
-        'sjekker om spilleren er død/hengt
-        If liv = 0 Then
-            MsgBox("Du har tapt og har blitt hengt..")
-        End If
-
+    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
 
     End Sub
 End Class
