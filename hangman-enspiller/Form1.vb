@@ -275,7 +275,5 @@
         bokstavsjekk("Å", 39)
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        PictureBox9.Visible = True
-    End Sub
+
 End Class

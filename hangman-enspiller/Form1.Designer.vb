@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -73,7 +72,6 @@ Partial Class Form1
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -534,7 +532,7 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Image = Global.hangman_enspiller.My.Resources.Resources._1_start
         Me.PictureBox1.Location = New System.Drawing.Point(0, 88)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(360, 320)
@@ -544,7 +542,7 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Image = Global.hangman_enspiller.My.Resources.Resources._2_galgefot
         Me.PictureBox2.Location = New System.Drawing.Point(0, 88)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(360, 320)
@@ -554,7 +552,7 @@ Partial Class Form1
         '
         'PictureBox3
         '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Image = Global.hangman_enspiller.My.Resources.Resources._3_galgebein
         Me.PictureBox3.Location = New System.Drawing.Point(0, 88)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(360, 320)
@@ -564,7 +562,7 @@ Partial Class Form1
         '
         'PictureBox4
         '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Image = Global.hangman_enspiller.My.Resources.Resources._4_galgetverrligger
         Me.PictureBox4.Location = New System.Drawing.Point(0, 88)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(360, 320)
@@ -574,7 +572,7 @@ Partial Class Form1
         '
         'PictureBox5
         '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Image = Global.hangman_enspiller.My.Resources.Resources._5_tau
         Me.PictureBox5.Location = New System.Drawing.Point(0, 88)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(360, 320)
@@ -584,7 +582,7 @@ Partial Class Form1
         '
         'PictureBox6
         '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Image = Global.hangman_enspiller.My.Resources.Resources._6_hode
         Me.PictureBox6.Location = New System.Drawing.Point(0, 88)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(360, 320)
@@ -594,7 +592,7 @@ Partial Class Form1
         '
         'PictureBox7
         '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Image = Global.hangman_enspiller.My.Resources.Resources._7_armer
         Me.PictureBox7.Location = New System.Drawing.Point(0, 88)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(360, 320)
@@ -604,7 +602,7 @@ Partial Class Form1
         '
         'PictureBox8
         '
-        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
+        Me.PictureBox8.Image = Global.hangman_enspiller.My.Resources.Resources._8_kropp
         Me.PictureBox8.Location = New System.Drawing.Point(0, 88)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(360, 320)
@@ -614,7 +612,7 @@ Partial Class Form1
         '
         'PictureBox9
         '
-        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
+        Me.PictureBox9.Image = Global.hangman_enspiller.My.Resources.Resources._9_bein
         Me.PictureBox9.Location = New System.Drawing.Point(0, 88)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(360, 320)
@@ -622,21 +620,11 @@ Partial Class Form1
         Me.PictureBox9.TabStop = False
         Me.PictureBox9.Visible = False
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(488, 88)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 51
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(674, 572)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.PictureBox7)
@@ -752,6 +740,5 @@ Partial Class Form1
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
 
 End Class

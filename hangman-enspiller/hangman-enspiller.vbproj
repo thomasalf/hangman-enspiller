@@ -116,6 +116,36 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 galgefot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 galgebein.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4 galgetverrligger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5 tau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6 hode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7 armer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8 kropp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9 bein.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
