@@ -7,7 +7,7 @@
     Private spillordlengde As Integer 'Lengden på ordet som brukes i denne runden
     'Private bokstaverFunnet As Integer 'Antall bokstaver som er funnet av i spillordet denne runden
     Private liv As Integer 'Antallet liv/streker på tegningen spilleren har til rådighet hver runde
-    Private bokstaverIgjen 'Antallet bokstaver som gjenstår å finne denne runden
+    Private bokstaverIgjen As Integer 'Antallet bokstaver som gjenstår å finne denne runden
 
     'Funksjon som kjøres hver gang en bokstav i bokstavskyen klikkes på
     Private Function bokstavsjekk(ByVal valgtBokstav As String, valgtLabel As Integer)
@@ -18,7 +18,7 @@
         'sjekker om noen av bokstaven finnes i spillmatrisen 
         For i = 1 To (spillordlengde)
             If spillmatrise(i - 1) = valgtBokstav Then
-                Me.Controls("label" & i).Text = valgtBokstav 'xxx endre til Caps lock her
+                Me.Controls("label" & i).Text = valgtBokstav
                 antallForekomster = antallForekomster + 1
             End If
         Next
@@ -52,22 +52,23 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'Laster inn ord i ordlistematrisen
-        ordliste(0) = "a"
-        ordliste(1) = "ab"
-        ordliste(2) = "abc"
-        ordliste(3) = "abcd"
-        ordliste(4) = "abcde"
-        ordliste(5) = "abcdea"
-        ordliste(6) = "abcdeab"
+        ordliste(0) = "A"
+        ordliste(1) = "AB"
+        ordliste(2) = "ABC"
+        ordliste(3) = "ABCD"
+        ordliste(4) = "ABCDE"
+        ordliste(5) = "ABCDEF"
+        ordliste(6) = "ABCDEFA"
 
         'laster inn bokstavene i alfabetet
-        bokstavsky(0) = "a"
-        bokstavsky(1) = "b"
-        bokstavsky(2) = "c"
-        bokstavsky(3) = "d"
-        bokstavsky(4) = "e"
+        bokstavsky(0) = "A"
+        bokstavsky(1) = "B"
+        bokstavsky(2) = "C"
+        bokstavsky(3) = "D"
+        bokstavsky(4) = "E"
 
     End Sub
+
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         'Viser bokstaver i bokstavsky
@@ -117,26 +118,118 @@
 
 
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
-        bokstavsjekk("a", 11)
+        bokstavsjekk("A", 11)
     End Sub
 
     Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
-        bokstavsjekk("b", 12)
+        bokstavsjekk("B", 12)
     End Sub
 
     Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
-        bokstavsjekk("c", 13)
+        bokstavsjekk("C", 13)
     End Sub
 
     Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
-        bokstavsjekk("d", 14)
+        bokstavsjekk("D", 14)
     End Sub
 
     Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
-        bokstavsjekk("e", 15)
+        bokstavsjekk("E", 15)
     End Sub
 
     Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+        bokstavsjekk("F", 16)
+    End Sub
 
+    Private Sub Label17_Click(sender As Object, e As EventArgs) Handles Label17.Click
+        bokstavsjekk("G", 17)
+    End Sub
+
+    Private Sub Label18_Click(sender As Object, e As EventArgs) Handles Label18.Click
+        bokstavsjekk("H", 18)
+    End Sub
+
+    Private Sub Label19_Click(sender As Object, e As EventArgs) Handles Label19.Click
+        bokstavsjekk("I", 19)
+    End Sub
+
+    Private Sub Label20_Click(sender As Object, e As EventArgs) Handles Label20.Click
+        bokstavsjekk("J", 20)
+    End Sub
+
+    Private Sub Label21_Click(sender As Object, e As EventArgs) Handles Label21.Click
+        bokstavsjekk("K", 21)
+    End Sub
+
+    Private Sub Label22_Click(sender As Object, e As EventArgs) Handles Label22.Click
+        bokstavsjekk("L", 22)
+    End Sub
+
+    Private Sub Label23_Click(sender As Object, e As EventArgs) Handles Label23.Click
+        bokstavsjekk("M", 23)
+    End Sub
+
+    Private Sub Label24_Click(sender As Object, e As EventArgs) Handles Label24.Click
+        bokstavsjekk("N", 24)
+    End Sub
+
+    Private Sub Label25_Click(sender As Object, e As EventArgs) Handles Label25.Click
+        bokstavsjekk("O", 25)
+    End Sub
+
+    Private Sub Label26_Click(sender As Object, e As EventArgs) Handles Label26.Click
+        bokstavsjekk("P", 26)
+    End Sub
+
+    Private Sub Label27_Click(sender As Object, e As EventArgs) Handles Label27.Click
+        bokstavsjekk("Q", 27)
+    End Sub
+
+    Private Sub Label28_Click(sender As Object, e As EventArgs) Handles Label28.Click
+        bokstavsjekk("R", 28)
+    End Sub
+
+    Private Sub Label29_Click(sender As Object, e As EventArgs) Handles Label29.Click
+        bokstavsjekk("S", 29)
+    End Sub
+
+    Private Sub Label30_Click(sender As Object, e As EventArgs) Handles Label30.Click
+        bokstavsjekk("T", 30)
+    End Sub
+
+    Private Sub Label31_Click(sender As Object, e As EventArgs) Handles Label31.Click
+        bokstavsjekk("U", 31)
+    End Sub
+
+    Private Sub Label32_Click(sender As Object, e As EventArgs) Handles Label32.Click
+        bokstavsjekk("V", 32)
+    End Sub
+
+    Private Sub Label33_Click(sender As Object, e As EventArgs) Handles Label33.Click
+        bokstavsjekk("W", 33)
+    End Sub
+
+    Private Sub Label34_Click(sender As Object, e As EventArgs) Handles Label34.Click
+        bokstavsjekk("X", 34)
+    End Sub
+
+    Private Sub Label35_Click(sender As Object, e As EventArgs) Handles Label35.Click
+        bokstavsjekk("Y", 35)
+    End Sub
+
+    Private Sub Label36_Click(sender As Object, e As EventArgs) Handles Label36.Click
+        bokstavsjekk("Z", 36)
+    End Sub
+
+    Private Sub Label37_Click(sender As Object, e As EventArgs) Handles Label37.Click
+        bokstavsjekk("Æ", 37)
+    End Sub
+
+    Private Sub Label38_Click(sender As Object, e As EventArgs) Handles Label38.Click
+        bokstavsjekk("Ø", 38)
+    End Sub
+
+    Private Sub Label39_Click(sender As Object, e As EventArgs) Handles Label39.Click
+        bokstavsjekk("Å", 39)
     End Sub
 End Class
