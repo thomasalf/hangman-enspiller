@@ -226,7 +226,7 @@ Partial Class Form1
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(424, 304)
+        Me.Label12.Location = New System.Drawing.Point(424, 296)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(33, 31)
         Me.Label12.TabIndex = 13
