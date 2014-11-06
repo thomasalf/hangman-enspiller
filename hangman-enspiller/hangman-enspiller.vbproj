@@ -115,6 +115,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Resources\Schoolbell.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Image1.bmp" />

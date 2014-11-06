@@ -293,11 +293,10 @@
 
         'Lar motspiller taste inn spillordet i en inputbox, som konverteres til store bokstaver
         Dim spillord As String
-        'spillord = InputBox("Ord:").ToUpper
 
 
         'sjekker at ordet er mellom 1 og 10 bokstaver langt. XXX Må også sjekke og at det bare inneholder bokstaver.
-        Do
+        Do 'sjekker at ordet er mellom 1 og 10 bokstaver langt
             spillord = InputBox("Skriv inn ordet som skal brukes i spillet. Ordet kan ha maksimalt 10 bokstaver. Tall og spesialtegn er juks.").ToUpper
         Loop Until spillord.Length < 11 And spillord.Length > 0
 
