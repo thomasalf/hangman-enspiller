@@ -311,7 +311,10 @@
 
             For i = 0 To (spillord.Length - 1) 'løkke: kontrollerer at hver bokstav er i området A-Å  XXX fungerer ikke med Æ og Ø..
                 godkjent = spillmatrise(i) Like "[A-Å]"
-                ListBox1.Items.Add("bokstav nr " & (i + 1) & " : " & spillmatrise(i) & " " & godkjent)
+                If spillmatrise(i) = "Æ" Or spillmatrise(i) = "Ø" Then 'Nødløsning for å få godkjent bokstavene Æ og Ø
+                    godkjent = True
+                End If
+                ListBox1.Items.Add("bokstav nr " & (i + 1) & " : " & spillmatrise(i) & " " & godkjent) 'XXX til debug-bruk
                 If godkjent = True Then
                     antallGodkjenteBokstaver = antallGodkjenteBokstaver + 1
                 End If
