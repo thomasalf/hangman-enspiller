@@ -72,6 +72,7 @@ Partial Class Form1
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.btn2player = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -620,11 +621,21 @@ Partial Class Form1
         Me.PictureBox9.TabStop = False
         Me.PictureBox9.Visible = False
         '
+        'btn2player
+        '
+        Me.btn2player.Location = New System.Drawing.Point(390, 21)
+        Me.btn2player.Name = "btn2player"
+        Me.btn2player.Size = New System.Drawing.Size(138, 29)
+        Me.btn2player.TabIndex = 51
+        Me.btn2player.Text = "2 player"
+        Me.btn2player.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(674, 572)
+        Me.Controls.Add(Me.btn2player)
         Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.PictureBox7)
@@ -740,5 +751,6 @@ Partial Class Form1
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents btn2player As System.Windows.Forms.Button
 
 End Class

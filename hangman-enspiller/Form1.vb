@@ -276,4 +276,49 @@
     End Sub
 
 
+    Private Sub btn2player_Click(sender As Object, e As EventArgs) Handles btn2player.Click
+        'viser tomt bilde / bakgrunnsbilde
+        For i = 2 To 9
+            Me.Controls("Picturebox" & i).Visible = False
+        Next
+        PictureBox1.Visible = True
+
+
+        'Starter spillet
+
+        'Viser bokstaver i bokstavsky
+        For i = 11 To 39 'skal vise label 11 til og med label 39
+            Me.Controls("label" & i).Visible = True
+        Next
+
+        'Lar motspiller taste inn spillordet i en inputbox, som konverteres til store bokstaver
+        Dim spillord As String
+        spillord = InputBox("Ord:").ToUpper
+
+
+        spillordlengde = spillord.Length
+        MsgBox("Spillord: " & spillord)
+
+        spillmatrise = spillord.ToCharArray
+        MsgBox("spillmatrise: " & spillmatrise(0))
+
+        'legger inn underscores/"nullstiller" i alle labels
+        For i = 1 To 10
+            Me.Controls("label" & i).Text = "_"
+        Next
+
+        'viser underscores basert på spillordlengde
+        For i = 1 To spillordlengde
+            Me.Controls("label" & i).Visible = True
+        Next
+
+        'setter variabelen "liv" til 8 (som tilsvarer maksimalt antall streker på tegningen)
+        liv = 8 'xxx har muligens satt denne til et annet tall enn 8 for å kunne teste
+        MsgBox("liv = " & liv)
+
+        'setter variabelen bokstaverIgjen lik lengden på spillordet
+        bokstaverIgjen = spillordlengde
+        MsgBox("Antall bokstaver igjen å finne/bokstaverIgjen " & bokstaverIgjen)
+
+    End Sub
 End Class
