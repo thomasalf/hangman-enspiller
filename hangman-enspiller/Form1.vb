@@ -295,17 +295,40 @@
         Dim spillord As String
 
 
-        'sjekker at ordet er mellom 1 og 10 bokstaver langt. XXX Må også sjekke og at det bare inneholder bokstaver.
-        Do 'sjekker at ordet er mellom 1 og 10 bokstaver langt
-            spillord = InputBox("Skriv inn ordet som skal brukes i spillet. Ordet kan ha maksimalt 10 bokstaver. Tall og spesialtegn er juks.").ToUpper
-        Loop Until spillord.Length < 11 And spillord.Length > 0
+        'sjekker om ordet er godkjent (1-10 bokstaver, A-Å, ingen spesialtegn eller tall)
+        Dim godkjent As Boolean
+        Dim antallGodkjenteBokstaver
+        godkjent = False
+
+
+        Do
+            antallGodkjenteBokstaver = 0
+            Do 'denne løkka sjekker lengden på ordet
+                spillord = InputBox("Skriv inn ord. Maks 10 bokstaver. A-Å").ToUpper
+            Loop Until 0 < spillord.Length And spillord.Length < 11
+
+            spillmatrise = spillord.ToCharArray 'laster inn ord i matrise
+
+            For i = 0 To (spillord.Length - 1) 'løkke: kontrollerer at hver bokstav er i området A-Å  XXX fungerer ikke med Æ og Ø..
+                godkjent = spillmatrise(i) Like "[A-Å]"
+                ListBox1.Items.Add("bokstav nr " & (i + 1) & " : " & spillmatrise(i) & " " & godkjent)
+                If godkjent = True Then
+                    antallGodkjenteBokstaver = antallGodkjenteBokstaver + 1
+                End If
+            Next
+
+        Loop Until antallGodkjenteBokstaver = spillord.Length
+
+
+
+
 
 
 
         spillordlengde = spillord.Length
         MsgBox("Spillord: " & spillord)
 
-        spillmatrise = spillord.ToCharArray
+        'spillmatrise = spillord.ToCharArray
         MsgBox("spillmatrise: " & spillmatrise(0))
 
         'legger inn underscores/"nullstiller" i alle labels
