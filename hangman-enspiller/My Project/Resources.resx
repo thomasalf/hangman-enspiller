@@ -118,8 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="slapstick1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slapstick1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slapstick2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slapstick2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slapstick3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slapstick3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slapstick4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slapstick4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1_galgefot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1 galgefot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_1_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1 start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2_galgebein" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2 galgebein.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_2_galgefot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2 galgefot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,17 +145,35 @@
   <data name="_3_galgebein" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3 galgebein.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_3_galgetverr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3 galgetverr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_4_galgetverrligger" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4 galgetverrligger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_4_tau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4 tau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_hode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5 hode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_5_tau" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5 tau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_6_armer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6 armer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_6_hode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6 hode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_7_armer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7 armer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_7_kropp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7 kropp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_8_game_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8 game over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_8_kropp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8 kropp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

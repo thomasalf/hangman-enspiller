@@ -69,6 +69,7 @@
                 PictureBox8.Visible = False
                 PictureBox9.Visible = True
                 MsgBox("Du har tapt og har blitt hengt..")
+                MsgBox("prosedyre som velger tilfeldig slapstickbilde")
         End Select
 
         'gammel "sjekk om spilleren er død"-kode

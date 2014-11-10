@@ -147,6 +147,42 @@
   <ItemGroup>
     <None Include="Resources\9 bein.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 galgefot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 galgebein.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 galgetverr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4 tau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5 hode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6 armer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7 kropp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8 game over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

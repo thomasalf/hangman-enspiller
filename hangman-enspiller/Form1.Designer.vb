@@ -63,26 +63,26 @@ Partial Class Form1
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.btn2player = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -532,96 +532,6 @@ Partial Class Form1
         Me.Label39.Text = "Å"
         Me.Label39.Visible = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.hangman_enspiller.My.Resources.Resources._1_start
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox1.TabIndex = 42
-        Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Visible = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.hangman_enspiller.My.Resources.Resources._2_galgefot
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox2.TabIndex = 43
-        Me.PictureBox2.TabStop = False
-        Me.PictureBox2.Visible = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.hangman_enspiller.My.Resources.Resources._3_galgebein
-        Me.PictureBox3.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox3.TabIndex = 44
-        Me.PictureBox3.TabStop = False
-        Me.PictureBox3.Visible = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.hangman_enspiller.My.Resources.Resources._4_galgetverrligger
-        Me.PictureBox4.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox4.TabIndex = 45
-        Me.PictureBox4.TabStop = False
-        Me.PictureBox4.Visible = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.hangman_enspiller.My.Resources.Resources._5_tau
-        Me.PictureBox5.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox5.TabIndex = 46
-        Me.PictureBox5.TabStop = False
-        Me.PictureBox5.Visible = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.hangman_enspiller.My.Resources.Resources._6_hode
-        Me.PictureBox6.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox6.TabIndex = 47
-        Me.PictureBox6.TabStop = False
-        Me.PictureBox6.Visible = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = Global.hangman_enspiller.My.Resources.Resources._7_armer
-        Me.PictureBox7.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox7.TabIndex = 48
-        Me.PictureBox7.TabStop = False
-        Me.PictureBox7.Visible = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.hangman_enspiller.My.Resources.Resources._8_kropp
-        Me.PictureBox8.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox8.TabIndex = 49
-        Me.PictureBox8.TabStop = False
-        Me.PictureBox8.Visible = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = Global.hangman_enspiller.My.Resources.Resources._9_bein
-        Me.PictureBox9.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox9.TabIndex = 50
-        Me.PictureBox9.TabStop = False
-        Me.PictureBox9.Visible = False
-        '
         'btn2player
         '
         Me.btn2player.Location = New System.Drawing.Point(390, 21)
@@ -638,6 +548,96 @@ Partial Class Form1
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(176, 173)
         Me.ListBox1.TabIndex = 52
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = Global.hangman_enspiller.My.Resources.Resources._8_game_over
+        Me.PictureBox9.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox9.TabIndex = 50
+        Me.PictureBox9.TabStop = False
+        Me.PictureBox9.Visible = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.hangman_enspiller.My.Resources.Resources._7_kropp
+        Me.PictureBox8.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox8.TabIndex = 49
+        Me.PictureBox8.TabStop = False
+        Me.PictureBox8.Visible = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.hangman_enspiller.My.Resources.Resources._6_armer
+        Me.PictureBox7.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox7.TabIndex = 48
+        Me.PictureBox7.TabStop = False
+        Me.PictureBox7.Visible = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.hangman_enspiller.My.Resources.Resources._5_hode
+        Me.PictureBox6.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox6.TabIndex = 47
+        Me.PictureBox6.TabStop = False
+        Me.PictureBox6.Visible = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.hangman_enspiller.My.Resources.Resources._4_tau
+        Me.PictureBox5.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox5.TabIndex = 46
+        Me.PictureBox5.TabStop = False
+        Me.PictureBox5.Visible = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.hangman_enspiller.My.Resources.Resources._3_galgetverr
+        Me.PictureBox4.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox4.TabIndex = 45
+        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.hangman_enspiller.My.Resources.Resources._2_galgebein
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox3.TabIndex = 44
+        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.hangman_enspiller.My.Resources.Resources._1_galgefot
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox2.TabIndex = 43
+        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.hangman_enspiller.My.Resources.Resources._1_start
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox1.TabIndex = 42
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
         '
         'Form1
         '
@@ -698,15 +698,15 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
