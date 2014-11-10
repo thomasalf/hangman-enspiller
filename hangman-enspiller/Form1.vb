@@ -5,9 +5,25 @@
     Private bokstavsky(28) As String 'Bokstavene i alfabetet
 
     Private spillordlengde As Integer 'Lengden på ordet som brukes i denne runden
-    'Private bokstaverFunnet As Integer 'Antall bokstaver som er funnet av i spillordet denne runden
     Private liv As Integer 'Antallet liv/streker på tegningen spilleren har til rådighet hver runde
     Private bokstaverIgjen As Integer 'Antallet bokstaver som gjenstår å finne denne runden
+
+    'Prosedyre som viser et tilfeldig "slapstick"-bilde
+    Private Sub slapstickbilde()
+        Dim bildenr As Integer
+        Randomize()
+        bildenr = CInt(Int((4 * Rnd()) + 10))
+        PictureBox9.Visible = False
+        Me.Controls("PictureBox" & bildenr).Visible = True
+    End Sub
+
+    'Prosedyre som nullstiller bildevisning og viser "tomt" bilde
+    Private Sub nullstillBilde()
+        For i = 1 To 13
+            Me.Controls("PictureBox" & i).Visible = False
+        Next
+        PictureBox1.Visible = True
+    End Sub
 
     'Funksjon som kjøres hver gang en bokstav i bokstavskyen klikkes på
     Private Function bokstavsjekk(ByVal valgtBokstav As String, valgtLabel As Integer)
@@ -69,7 +85,7 @@
                 PictureBox8.Visible = False
                 PictureBox9.Visible = True
                 MsgBox("Du har tapt og har blitt hengt..")
-                MsgBox("prosedyre som velger tilfeldig slapstickbilde")
+                slapstickbilde()
         End Select
 
         'gammel "sjekk om spilleren er død"-kode
@@ -82,6 +98,30 @@
 
     End Function
 
+    'Prosedyre som viser bokstaver i bokstavsky
+    Private Sub visBokstavskybokstaver()
+        For i = 11 To 39 'skal vise label 11 til og med label 39
+            Me.Controls("label" & i).Visible = True
+        Next
+    End Sub
+
+    'Prosedyre som viser underscores basert på spillordlengde
+    Private Sub visUnderscores()
+        For i = 1 To 10 'skjuler alle
+            Me.Controls("label" & i).Visible = False
+        Next
+
+        For i = 1 To spillordlengde 'viser riktig antall
+            Me.Controls("label" & i).Visible = True
+        Next
+    End Sub
+
+    'Prosedyre som bytter ut bokstaver med underscores
+    Private Sub fjernBokstaverVisUnderscores()
+        For i = 1 To 10
+            Me.Controls("label" & i).Text = "_"
+        Next
+    End Sub
 
     'Laster inn ord i matrise og bokstaver i bokstavsky. Viser tomt bilde.
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -114,10 +154,11 @@
 
     'Starter spillet
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        'nullstiller bilde
+        nullstillBilde()
+
         'Viser bokstaver i bokstavsky
-        For i = 11 To 39 'skal vise label 11 til og med label 39
-            Me.Controls("label" & i).Visible = True
-        Next
+        visBokstavskybokstaver()
 
         'Sjekker lengden på ordlisten og laster verdien inn i variabel
         Dim ordlistelengde As Integer
@@ -139,17 +180,13 @@
         MsgBox("spillmatrise: " & spillmatrise(0))
 
         'legger inn underscores/"nullstiller" i alle labels
-        For i = 1 To 10
-            Me.Controls("label" & i).Text = "_"
-        Next
+        fjernBokstaverVisUnderscores()
 
         'viser underscores basert på spillordlengde
-        For i = 1 To spillordlengde
-            Me.Controls("label" & i).Visible = True
-        Next
+        visUnderscores()
 
         'setter variabelen "liv" til 8 (som tilsvarer maksimalt antall streker på tegningen)
-        liv = 8 'xxx har muligens satt denne til et annet tall enn 8 for å kunne teste
+        liv = 8
         MsgBox("liv = " & liv)
 
         'setter variabelen bokstaverIgjen lik lengden på spillordet
@@ -279,32 +316,23 @@
 
     Private Sub btn2player_Click(sender As Object, e As EventArgs) Handles btn2player.Click
         'viser tomt bilde / bakgrunnsbilde
-        For i = 2 To 9
-            Me.Controls("Picturebox" & i).Visible = False
-        Next
-        PictureBox1.Visible = True
-
-
-        'Starter spillet
+        nullstillBilde()
 
         'Viser bokstaver i bokstavsky
-        For i = 11 To 39 'skal vise label 11 til og med label 39
-            Me.Controls("label" & i).Visible = True
-        Next
+        visBokstavskybokstaver()
 
-        'Lar motspiller taste inn spillordet i en inputbox, som konverteres til store bokstaver
+        'Lar motspiller taste inn spillordet i en inputbox
+        'konverterer til store bokstaver
+        'sjekker at ordet er godkjent (1-10 bokstaver, A-Å, ingen spesialtegn eller tall)
         Dim spillord As String
-
-
-        'sjekker om ordet er godkjent (1-10 bokstaver, A-Å, ingen spesialtegn eller tall)
         Dim godkjent As Boolean
         Dim antallGodkjenteBokstaver
         godkjent = False
 
-
         Do
             antallGodkjenteBokstaver = 0
-            Do 'denne løkka sjekker lengden på ordet
+
+            Do 'løkke: sjekker lengden på ordet
                 spillord = InputBox("Skriv inn ord. Maks 10 bokstaver. A-Å").ToUpper
             Loop Until 0 < spillord.Length And spillord.Length < 11
 
@@ -325,30 +353,17 @@
 
 
 
-
-
-
-
         spillordlengde = spillord.Length
         MsgBox("Spillord: " & spillord)
-
         'spillmatrise = spillord.ToCharArray
         MsgBox("spillmatrise: " & spillmatrise(0))
-
         'legger inn underscores/"nullstiller" i alle labels
-        For i = 1 To 10
-            Me.Controls("label" & i).Text = "_"
-        Next
-
+        fjernBokstaverVisUnderscores()
         'viser underscores basert på spillordlengde
-        For i = 1 To spillordlengde
-            Me.Controls("label" & i).Visible = True
-        Next
-
+        visUnderscores()
         'setter variabelen "liv" til 8 (som tilsvarer maksimalt antall streker på tegningen)
-        liv = 8 'xxx har muligens satt denne til et annet tall enn 8 for å kunne teste
+        liv = 8
         MsgBox("liv = " & liv)
-
         'setter variabelen bokstaverIgjen lik lengden på spillordet
         bokstaverIgjen = spillordlengde
         MsgBox("Antall bokstaver igjen å finne/bokstaverIgjen " & bokstaverIgjen)
