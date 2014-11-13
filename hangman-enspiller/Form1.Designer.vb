@@ -88,6 +88,7 @@ Partial Class Form1
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Button11 = New System.Windows.Forms.Button()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -651,12 +652,19 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(80, 40)
+        Me.Button3.BackColor = System.Drawing.Color.SeaGreen
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.Transparent
+        Me.Button3.Location = New System.Drawing.Point(72, 40)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(168, 40)
+        Me.Button3.Size = New System.Drawing.Size(208, 40)
         Me.Button3.TabIndex = 57
         Me.Button3.Text = "Tilbake til hovedmeny"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         Me.Button3.Visible = False
         '
         'PictureBox13
@@ -791,40 +799,67 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(272, 40)
+        Me.Button5.BackColor = System.Drawing.Color.SeaGreen
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.Transparent
+        Me.Button5.Location = New System.Drawing.Point(296, 40)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(168, 40)
+        Me.Button5.Size = New System.Drawing.Size(208, 40)
         Me.Button5.TabIndex = 58
-        Me.Button5.Text = "1pl: Nytt spill"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.Text = "Nytt spill"
+        Me.Button5.UseVisualStyleBackColor = False
         Me.Button5.Visible = False
         '
         'Button6
         '
+        Me.Button6.BackColor = System.Drawing.Color.SeaGreen
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.Transparent
         Me.Button6.Location = New System.Drawing.Point(336, 128)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(168, 40)
         Me.Button6.TabIndex = 59
-        Me.Button6.Text = "H: En spiller"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.Text = "Én spiller"
+        Me.Button6.UseVisualStyleBackColor = False
+        Me.Button6.Visible = False
         '
         'Button7
         '
+        Me.Button7.BackColor = System.Drawing.Color.SeaGreen
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.Color.Transparent
         Me.Button7.Location = New System.Drawing.Point(336, 176)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(168, 40)
         Me.Button7.TabIndex = 60
-        Me.Button7.Text = "H: To spillere"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Button7.Text = "To spillere"
+        Me.Button7.UseVisualStyleBackColor = False
+        Me.Button7.Visible = False
         '
         'Button8
         '
+        Me.Button8.BackColor = System.Drawing.Color.SeaGreen
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.Color.Transparent
         Me.Button8.Location = New System.Drawing.Point(336, 224)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(168, 40)
         Me.Button8.TabIndex = 61
-        Me.Button8.Text = "H: Innstillinger"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Button8.Text = "Slå av lyd"
+        Me.Button8.UseVisualStyleBackColor = False
+        Me.Button8.Visible = False
         '
         'Label40
         '
@@ -840,26 +875,54 @@ Partial Class Form1
         '
         'Button9
         '
+        Me.Button9.BackColor = System.Drawing.Color.SeaGreen
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.ForeColor = System.Drawing.Color.Transparent
         Me.Button9.Location = New System.Drawing.Point(336, 272)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(168, 40)
         Me.Button9.TabIndex = 63
-        Me.Button9.Text = "H: Avslutt"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.Button9.Text = "Avslutt"
+        Me.Button9.UseVisualStyleBackColor = False
+        Me.Button9.Visible = False
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(448, 40)
+        Me.Button10.BackColor = System.Drawing.Color.SeaGreen
+        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.ForeColor = System.Drawing.Color.Transparent
+        Me.Button10.Location = New System.Drawing.Point(288, 40)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(168, 40)
+        Me.Button10.Size = New System.Drawing.Size(208, 40)
         Me.Button10.TabIndex = 64
-        Me.Button10.Text = "2pl: Nytt spill"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.Button10.Text = "Nytt spill"
+        Me.Button10.UseVisualStyleBackColor = False
         Me.Button10.Visible = False
         '
         'Timer1
         '
         Me.Timer1.Interval = 1000
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.SeaGreen
+        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.ForeColor = System.Drawing.Color.Transparent
+        Me.Button11.Location = New System.Drawing.Point(336, 208)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(168, 40)
+        Me.Button11.TabIndex = 65
+        Me.Button11.Text = "Start spillet"
+        Me.Button11.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -868,6 +931,7 @@ Partial Class Form1
         Me.BackgroundImage = Global.hangman_enspiller.My.Resources.Resources.sea_green
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(840, 561)
+        Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Label40)
@@ -1016,5 +1080,6 @@ Partial Class Form1
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Button11 As System.Windows.Forms.Button
 
 End Class

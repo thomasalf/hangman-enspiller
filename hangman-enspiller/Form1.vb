@@ -6,6 +6,7 @@
     Private spillordlengde As Integer 'Lengden på ordet som brukes i denne runden
     Private liv As Integer 'Antallet liv/streker på tegningen spilleren har til rådighet hver runde
     Private bokstaverIgjen As Integer 'Antallet bokstaver som gjenstår å finne denne runden
+    Private spillAvLyd As Boolean 'Lagrer lydinnstilling
 
     'Prosedyre som laster inn ordlisten i matrisen
     Private Sub lastInnOrdliste()
@@ -55,7 +56,9 @@
         Randomize()
         bildenr = CInt(Int((4 * Rnd()) + 10))
         PictureBox9.Visible = False
-        My.Computer.Audio.Play(My.Resources.ResourceManager.GetObject("slapstick" & bildenr - 9 & 1), AudioPlayMode.Background)
+        If spillAvLyd = True Then
+            My.Computer.Audio.Play(My.Resources.ResourceManager.GetObject("slapstick" & bildenr - 9 & 1), AudioPlayMode.Background)
+        End If
         Me.Controls("PictureBox" & bildenr).Visible = True
     End Sub
 
@@ -81,10 +84,12 @@
 
     'Prosedyre som spiller tilfeldig valgt krittlyd
     Private Sub krittlyd()
+        If spillAvLyd = True Then
         Dim lydnr As Integer
         Randomize()
         lydnr = CInt(Int((15 * Rnd()) + 1))
         My.Computer.Audio.Play(My.Resources.ResourceManager.GetObject("kritt" & lydnr), AudioPlayMode.Background)
+        End if
     End Sub
 
     'Funksjon som kjøres hver gang en bokstav i bokstavskyen klikkes på
@@ -189,7 +194,7 @@
     'Prosedyre som starter nytt spill for en spiller
     Private Sub startEnspiller()
         skjulAlt()
-        lastInnOrdliste()
+        'lastInnOrdliste()
         visEnspillerskjermbilde()
         nullstillBilde() 'nullstiller bilde
         visBokstavskybokstaver() 'Viser bokstaver i bokstavsky
@@ -329,6 +334,8 @@
         startTospiller()
     End Sub
 
+
+
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
         bokstavsjekk("A", 11)
     End Sub
@@ -464,4 +471,20 @@
 
 
 
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        If spillAvLyd = True Then
+            spillAvLyd = False
+            Button8.Text = "Slå på lyd"
+        ElseIf spillAvLyd = False Then
+            spillAvLyd = True
+            Button8.Text = "Slå av lyd"
+        End If
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        lastInnOrdliste()
+        spillAvLyd = True
+        Button11.Visible = False
+        visHovedmeny()
+    End Sub
 End Class
