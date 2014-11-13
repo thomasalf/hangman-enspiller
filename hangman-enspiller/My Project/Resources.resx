@@ -160,4 +160,64 @@
   <data name="sea_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sea green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="testlyd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\testlyd.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slapstick11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slapstick1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slapstick21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slapstick2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slapstick31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slapstick3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slapstick41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slapstick4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt10.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt11.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt12.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt13.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt14.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt15.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt6.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt7.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt8.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kritt9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kritt9.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

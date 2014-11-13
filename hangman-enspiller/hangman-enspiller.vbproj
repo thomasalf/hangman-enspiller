@@ -186,6 +186,66 @@
   <ItemGroup>
     <None Include="Resources\slapstick4.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testlyd.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kritt15.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -151,6 +151,141 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt1() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt10() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt10", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt11() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt11", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt12() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt12", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt13() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt13", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt14() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt14", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt15() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt15", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt2() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt2", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt3() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt3", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt4() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt4", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt5() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt5", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt6() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt6", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt7() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt7", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt8() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt8", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property kritt9() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("kritt9", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property sea_green() As System.Drawing.Bitmap
@@ -171,12 +306,30 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property slapstick11() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("slapstick11", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property slapstick2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("slapstick2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property slapstick21() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("slapstick21", resourceCulture)
             End Get
         End Property
         
@@ -191,12 +344,39 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property slapstick31() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("slapstick31", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property slapstick4() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("slapstick4", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property slapstick41() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("slapstick41", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property testlyd() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("testlyd", resourceCulture)
             End Get
         End Property
     End Module

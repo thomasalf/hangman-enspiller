@@ -48,12 +48,14 @@
         Label40.Visible = True 'viser overskrift
     End Sub
 
+
     'Prosedyre som viser et tilfeldig "slapstick"-bilde
     Private Sub slapstickbilde()
         Dim bildenr As Integer
         Randomize()
         bildenr = CInt(Int((4 * Rnd()) + 10))
         PictureBox9.Visible = False
+        My.Computer.Audio.Play(My.Resources.ResourceManager.GetObject("slapstick" & bildenr - 9 & 1), AudioPlayMode.Background)
         Me.Controls("PictureBox" & bildenr).Visible = True
     End Sub
 
@@ -77,8 +79,18 @@
         Button10.Visible = True
     End Sub
 
+    'Prosedyre som spiller tilfeldig valgt krittlyd
+    Private Sub krittlyd()
+        Dim lydnr As Integer
+        Randomize()
+        lydnr = CInt(Int((15 * Rnd()) + 1))
+        My.Computer.Audio.Play(My.Resources.ResourceManager.GetObject("kritt" & lydnr), AudioPlayMode.Background)
+    End Sub
+
     'Funksjon som kjøres hver gang en bokstav i bokstavskyen klikkes på
     Private Function bokstavsjekk(ByVal valgtBokstav As String, valgtLabel As Integer)
+        krittlyd() 'spiller krittlyd
+
         'Fjerner bokstaven fra bokstavsky
         Me.Controls("label" & valgtLabel).Visible = False
         'definerer variabelen antallForekomster
@@ -136,6 +148,7 @@
                 PictureBox8.Visible = False
                 PictureBox9.Visible = True
                 MsgBox("Du har tapt og har blitt hengt..")
+                skjulBokstavsky()
                 slapstickbilde()
         End Select
 
@@ -156,6 +169,13 @@
 
         For i = 1 To spillordlengde 'viser riktig antall
             Me.Controls("label" & i).Visible = True
+        Next
+    End Sub
+
+    'Prosedyre som skjuler bokstaver i bokstavsky
+    Private Sub skjulBokstavsky()
+        For i = 11 To 39 'skal vise label 11 til og med label 39
+            Me.Controls("label" & i).Visible = False
         Next
     End Sub
 
@@ -440,6 +460,8 @@
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         End 'Avslutter programmet
     End Sub
+
+
 
 
 End Class
