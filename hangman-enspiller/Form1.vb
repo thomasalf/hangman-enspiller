@@ -2,11 +2,51 @@
 
     Private spillmatrise() As Char 'Ordet som brukes i denne runden
     Private ordliste(10) As String 'Alle ordene som kan brukes i spillet
-    Private bokstavsky(28) As String 'Bokstavene i alfabetet
 
     Private spillordlengde As Integer 'Lengden på ordet som brukes i denne runden
     Private liv As Integer 'Antallet liv/streker på tegningen spilleren har til rådighet hver runde
     Private bokstaverIgjen As Integer 'Antallet bokstaver som gjenstår å finne denne runden
+
+    'Prosedyre som laster inn ordlisten i matrisen
+    Private Sub lastInnOrdliste()
+        ordliste(0) = "A"
+        ordliste(1) = "AB"
+        ordliste(2) = "ABC"
+        ordliste(3) = "ABCD"
+        ordliste(4) = "ABCDE"
+        ordliste(5) = "ABCDEF"
+        ordliste(6) = "ABCDEFA"
+        ordliste(7) = "ABCCDGAD"
+        ordliste(8) = "ABHAIJKLM"
+        ordliste(9) = "AABBHHGGAA"
+        ordliste(10) = "BBCCDDKKLLM"
+    End Sub
+
+    'Prosedyre som skjuler alle labels, knapper o.l.
+    Private Sub skjulAlt()
+        For i = 1 To 10 'Skjuler alle knapper
+            Me.Controls("Button" & i).Visible = False
+        Next
+
+        For i = 1 To 40 'Skjuler alle labels
+            Me.Controls("Label" & i).Visible = False
+        Next
+
+        For i = 1 To 13 'Skjuler alle pictureboxes
+            Me.Controls("Picturebox" & i).Visible = False
+        Next
+
+
+    End Sub
+
+    'Prosedyre som viser hovedmeny
+    Private Sub visHovedmeny()
+        For i = 6 To 9 'Viser alle knapper
+            Me.Controls("Button" & i).Visible = True
+        Next
+
+        Label40.Visible = True 'viser overskrift
+    End Sub
 
     'Prosedyre som viser et tilfeldig "slapstick"-bilde
     Private Sub slapstickbilde()
@@ -23,6 +63,18 @@
             Me.Controls("PictureBox" & i).Visible = False
         Next
         PictureBox1.Visible = True
+    End Sub
+
+    'Prosedyre som viser knapper o.l. til enspillerskjermbilde
+    Private Sub visEnspillerskjermbilde()
+        Button3.Visible = True
+        Button5.Visible = True
+    End Sub
+
+    'Prosedyre som viser knapper o.l. til tospillerskjermbilde
+    Private Sub visTospillerskjermbilde()
+        Button3.Visible = True
+        Button10.Visible = True
     End Sub
 
     'Funksjon som kjøres hver gang en bokstav i bokstavskyen klikkes på
@@ -48,7 +100,6 @@
                 Me.Controls("label" & i).Visible = False
             Next
             MsgBox("Du har vunnet!") 'viser vinnerskjermbilde
-
         End If
 
         'sjekker om spilleren skal miste liv
@@ -88,14 +139,6 @@
                 slapstickbilde()
         End Select
 
-        'gammel "sjekk om spilleren er død"-kode
-        'If liv = 0 Then
-        'PictureBox1.Visible = False
-        'PictureBox9.Visible = True
-        'MsgBox("Du har tapt og har blitt hengt..")
-        'End If
-
-
     End Function
 
     'Prosedyre som viser bokstaver i bokstavsky
@@ -123,52 +166,23 @@
         Next
     End Sub
 
-    'Laster inn ord i matrise og bokstaver i bokstavsky. Viser tomt bilde.
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'Laster inn ord i ordlistematrisen
-        ordliste(0) = "A"
-        ordliste(1) = "AB"
-        ordliste(2) = "ABC"
-        ordliste(3) = "ABCD"
-        ordliste(4) = "ABCDE"
-        ordliste(5) = "ABCDEF"
-        ordliste(6) = "ABCDEFA"
-        ordliste(7) = "ABCCDGAD"
-        ordliste(8) = "ABHAIJKLM"
-        ordliste(9) = "AABBHHGGAA"
-        ordliste(10) = "BBCCDDKKLLM"
-
-        'laster inn bokstavene i alfabetet
-        bokstavsky(0) = "A"
-        bokstavsky(1) = "B"
-        bokstavsky(2) = "C"
-        bokstavsky(3) = "D"
-        bokstavsky(4) = "E"
-
-        'viser tomt bilde / bakgrunnsbilde
-        For i = 2 To 9
-            Me.Controls("Picturebox" & i).Visible = False
-        Next
-        PictureBox1.Visible = True
-    End Sub
-
-    'Starter spillet
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'nullstiller bilde
-        nullstillBilde()
-
-        'Viser bokstaver i bokstavsky
-        visBokstavskybokstaver()
+    'Prosedyre som starter nytt spill for en spiller
+    Private Sub startEnspiller()
+        skjulAlt()
+        lastInnOrdliste()
+        visEnspillerskjermbilde()
+        nullstillBilde() 'nullstiller bilde
+        visBokstavskybokstaver() 'Viser bokstaver i bokstavsky
 
         'Sjekker lengden på ordlisten og laster verdien inn i variabel
         Dim ordlistelengde As Integer
         ordlistelengde = ordliste.Length
-        MsgBox("ordlistelengde: " & ordlistelengde)
+        'DEBUG MsgBox("ordlistelengde: " & ordlistelengde)
 
         'Velger tilfeldig tall mellom 0 og ordlistelengde og laster verdien inn i variabel
         Randomize()
         Dim tilfeldig As Integer = CInt(Int((ordlistelengde * Rnd()) + 1)) 'xxx Tror dette er ok nå. Her var det noe feil som gjorder at "tilfeldig" kunne bli lik null.
-        MsgBox("tilfeldig tall: " & tilfeldig)
+        'DEBUG MsgBox("tilfeldig tall: " & tilfeldig)
 
         'Henter inn ord basert på det tilfeldige tallet
         Dim spillord As String = ordliste(tilfeldig - 1)
@@ -192,10 +206,108 @@
         'setter variabelen bokstaverIgjen lik lengden på spillordet
         bokstaverIgjen = spillordlengde
         MsgBox("Antall bokstaver igjen å finne/bokstaverIgjen " & bokstaverIgjen)
+    End Sub
+
+    'Prosedyre som starter nytt spill for to spillere
+    Private Sub startTospiller()
+        'skjuler knapper o.l.
+        skjulAlt()
+
+        'viser tospillerskjermbilde
+        visTospillerskjermbilde()
+
+        'viser tomt bilde / bakgrunnsbilde
+        nullstillBilde()
+
+        'Viser bokstaver i bokstavsky
+        visBokstavskybokstaver()
+
+        'Lar motspiller taste inn spillordet i en inputbox
+        'konverterer til store bokstaver
+        'sjekker at ordet er godkjent (1-10 bokstaver, A-Å, ingen spesialtegn eller tall)
+        Dim spillord As String
+        Dim godkjent As Boolean
+        Dim antallGodkjenteBokstaver
+        godkjent = False
+
+        Do
+            antallGodkjenteBokstaver = 0
+
+            Do 'løkke: sjekker lengden på ordet
+                spillord = InputBox("Skriv inn ord. Maks 10 bokstaver. A-Å").ToUpper
+            Loop Until 0 < spillord.Length And spillord.Length < 11
+
+            spillmatrise = spillord.ToCharArray 'laster inn ord i matrise
+
+            For i = 0 To (spillord.Length - 1) 'løkke: kontrollerer at hver bokstav er i området A-Å  XXX fungerer ikke med Æ og Ø..
+                godkjent = spillmatrise(i) Like "[A-Å]"
+                If spillmatrise(i) = "Æ" Or spillmatrise(i) = "Ø" Then 'Nødløsning for å få godkjent bokstavene Æ og Ø
+                    godkjent = True
+                End If
+                ListBox1.Items.Add("bokstav nr " & (i + 1) & " : " & spillmatrise(i) & " " & godkjent) 'XXX til debug-bruk
+                If godkjent = True Then
+                    antallGodkjenteBokstaver = antallGodkjenteBokstaver + 1
+                End If
+            Next
+
+        Loop Until antallGodkjenteBokstaver = spillord.Length
+
+
+
+        spillordlengde = spillord.Length
+
+        'DEBUG MsgBox("Spillord: " & spillord)
+
+        'DEBUG MsgBox("spillmatrise: " & spillmatrise(0))
+
+        'legger inn underscores/"nullstiller" i alle labels
+        fjernBokstaverVisUnderscores()
+        'viser underscores basert på spillordlengde
+        visUnderscores()
+        'setter variabelen "liv" til 8 (som tilsvarer maksimalt antall streker på tegningen)
+        liv = 8
+        'DEBUG MsgBox("liv = " & liv)
+        'setter variabelen bokstaverIgjen lik lengden på spillordet
+        bokstaverIgjen = spillordlengde
+        'DEBUG MsgBox("Antall bokstaver igjen å finne/bokstaverIgjen " & bokstaverIgjen)
+    End Sub
+
+    'Laster inn ord i matrise og bokstaver i bokstavsky. Viser tomt bilde.
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        MsgBox("Denne knappen gjør ingenting..")
+        'Laster inn ord i ordlistematrisen
+        'lastInnOrdliste()
+
+        'viser tomt bilde / bakgrunnsbilde
+        'nullstillBilde()
+    End Sub
+
+    'GAMMEL Starter spill for en spiller
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        MsgBox("Denne knappen gjør ingenting")
 
 
     End Sub
 
+    'Starter spill for en spiller (fra hovedmeny)
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        startEnspiller()
+    End Sub
+
+    'Starter nytt spill for en spiller (fra enspillerskjermbilde)
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        startEnspiller()
+    End Sub
+
+    'Starter spill for to spillere (fra hovedmeny)
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        startTospiller()
+    End Sub
+
+    'Starter nytt spill for to spillere (fra tospillerskjermbilde)
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        startTospiller()
+    End Sub
 
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
         bokstavsjekk("A", 11)
@@ -314,59 +426,20 @@
     End Sub
 
 
-    Private Sub btn2player_Click(sender As Object, e As EventArgs) Handles btn2player.Click
-        'viser tomt bilde / bakgrunnsbilde
-        nullstillBilde()
-
-        'Viser bokstaver i bokstavsky
-        visBokstavskybokstaver()
-
-        'Lar motspiller taste inn spillordet i en inputbox
-        'konverterer til store bokstaver
-        'sjekker at ordet er godkjent (1-10 bokstaver, A-Å, ingen spesialtegn eller tall)
-        Dim spillord As String
-        Dim godkjent As Boolean
-        Dim antallGodkjenteBokstaver
-        godkjent = False
-
-        Do
-            antallGodkjenteBokstaver = 0
-
-            Do 'løkke: sjekker lengden på ordet
-                spillord = InputBox("Skriv inn ord. Maks 10 bokstaver. A-Å").ToUpper
-            Loop Until 0 < spillord.Length And spillord.Length < 11
-
-            spillmatrise = spillord.ToCharArray 'laster inn ord i matrise
-
-            For i = 0 To (spillord.Length - 1) 'løkke: kontrollerer at hver bokstav er i området A-Å  XXX fungerer ikke med Æ og Ø..
-                godkjent = spillmatrise(i) Like "[A-Å]"
-                If spillmatrise(i) = "Æ" Or spillmatrise(i) = "Ø" Then 'Nødløsning for å få godkjent bokstavene Æ og Ø
-                    godkjent = True
-                End If
-                ListBox1.Items.Add("bokstav nr " & (i + 1) & " : " & spillmatrise(i) & " " & godkjent) 'XXX til debug-bruk
-                If godkjent = True Then
-                    antallGodkjenteBokstaver = antallGodkjenteBokstaver + 1
-                End If
-            Next
-
-        Loop Until antallGodkjenteBokstaver = spillord.Length
-
-
-
-        spillordlengde = spillord.Length
-        MsgBox("Spillord: " & spillord)
-        'spillmatrise = spillord.ToCharArray
-        MsgBox("spillmatrise: " & spillmatrise(0))
-        'legger inn underscores/"nullstiller" i alle labels
-        fjernBokstaverVisUnderscores()
-        'viser underscores basert på spillordlengde
-        visUnderscores()
-        'setter variabelen "liv" til 8 (som tilsvarer maksimalt antall streker på tegningen)
-        liv = 8
-        MsgBox("liv = " & liv)
-        'setter variabelen bokstaverIgjen lik lengden på spillordet
-        bokstaverIgjen = spillordlengde
-        MsgBox("Antall bokstaver igjen å finne/bokstaverIgjen " & bokstaverIgjen)
+    Private Sub btn2player_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        MsgBox("denne knappen gjør ingenting..")
 
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        skjulAlt()
+        visHovedmeny()
+    End Sub
+
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        End 'Avslutter programmet
+    End Sub
+
+
 End Class

@@ -63,8 +63,13 @@ Partial Class Form1
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
-        Me.btn2player = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
@@ -74,10 +79,17 @@ Partial Class Form1
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,37 +99,37 @@ Partial Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(8, 8)
+        Me.Button1.Location = New System.Drawing.Point(616, 200)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(152, 23)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Last inn ord i ordlistematrisen"
         Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Visible = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(8, 40)
+        Me.Button2.Location = New System.Drawing.Point(600, 240)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(192, 23)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Velg tilfeldig ord og start spill"
         Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.Visible = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(64, 456)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(26, 29)
+        Me.Label1.Size = New System.Drawing.Size(40, 45)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "_"
         Me.Label1.Visible = False
@@ -125,10 +137,12 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(88, 456)
+        Me.Label2.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(104, 456)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(26, 29)
+        Me.Label2.Size = New System.Drawing.Size(40, 45)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "_"
         Me.Label2.Visible = False
@@ -136,10 +150,12 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(112, 456)
+        Me.Label3.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(144, 456)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(26, 29)
+        Me.Label3.Size = New System.Drawing.Size(40, 45)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "_"
         Me.Label3.Visible = False
@@ -147,10 +163,12 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(136, 456)
+        Me.Label4.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(184, 456)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(26, 29)
+        Me.Label4.Size = New System.Drawing.Size(40, 45)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "_"
         Me.Label4.Visible = False
@@ -158,10 +176,12 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(160, 456)
+        Me.Label5.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(224, 456)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(26, 29)
+        Me.Label5.Size = New System.Drawing.Size(40, 45)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "_"
         Me.Label5.Visible = False
@@ -169,10 +189,12 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(184, 456)
+        Me.Label6.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label6.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(264, 456)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(26, 29)
+        Me.Label6.Size = New System.Drawing.Size(40, 45)
         Me.Label6.TabIndex = 7
         Me.Label6.Text = "_"
         Me.Label6.Visible = False
@@ -180,10 +202,12 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(208, 456)
+        Me.Label7.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label7.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(304, 456)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(26, 29)
+        Me.Label7.Size = New System.Drawing.Size(40, 45)
         Me.Label7.TabIndex = 8
         Me.Label7.Text = "_"
         Me.Label7.Visible = False
@@ -191,10 +215,12 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(232, 456)
+        Me.Label8.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label8.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(344, 456)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(26, 29)
+        Me.Label8.Size = New System.Drawing.Size(40, 45)
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "_"
         Me.Label8.Visible = False
@@ -202,10 +228,12 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(256, 456)
+        Me.Label9.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label9.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(384, 456)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(26, 29)
+        Me.Label9.Size = New System.Drawing.Size(40, 45)
         Me.Label9.TabIndex = 10
         Me.Label9.Text = "_"
         Me.Label9.Visible = False
@@ -213,10 +241,12 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(280, 456)
+        Me.Label10.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label10.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(424, 456)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(26, 29)
+        Me.Label10.Size = New System.Drawing.Size(40, 45)
         Me.Label10.TabIndex = 11
         Me.Label10.Text = "_"
         Me.Label10.Visible = False
@@ -224,8 +254,10 @@ Partial Class Form1
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.SeaGreen
         Me.Label11.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(384, 304)
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(504, 312)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(37, 38)
         Me.Label11.TabIndex = 12
@@ -235,8 +267,10 @@ Partial Class Form1
         'Label12
         '
         Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.SeaGreen
         Me.Label12.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(424, 296)
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(544, 312)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(34, 38)
         Me.Label12.TabIndex = 13
@@ -246,8 +280,10 @@ Partial Class Form1
         'Label13
         '
         Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.SeaGreen
         Me.Label13.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(472, 304)
+        Me.Label13.ForeColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(592, 312)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(34, 38)
         Me.Label13.TabIndex = 14
@@ -257,8 +293,10 @@ Partial Class Form1
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.SeaGreen
         Me.Label14.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(520, 304)
+        Me.Label14.ForeColor = System.Drawing.Color.White
+        Me.Label14.Location = New System.Drawing.Point(640, 312)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(36, 38)
         Me.Label14.TabIndex = 15
@@ -268,8 +306,10 @@ Partial Class Form1
         'Label15
         '
         Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.SeaGreen
         Me.Label15.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(568, 304)
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(688, 312)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(34, 38)
         Me.Label15.TabIndex = 16
@@ -279,8 +319,10 @@ Partial Class Form1
         'Label16
         '
         Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.SeaGreen
         Me.Label16.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(608, 304)
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(728, 312)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(33, 38)
         Me.Label16.TabIndex = 18
@@ -290,8 +332,10 @@ Partial Class Form1
         'Label17
         '
         Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.SeaGreen
         Me.Label17.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(384, 344)
+        Me.Label17.ForeColor = System.Drawing.Color.White
+        Me.Label17.Location = New System.Drawing.Point(504, 352)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(35, 38)
         Me.Label17.TabIndex = 19
@@ -301,8 +345,10 @@ Partial Class Form1
         'Label18
         '
         Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.SeaGreen
         Me.Label18.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(424, 344)
+        Me.Label18.ForeColor = System.Drawing.Color.White
+        Me.Label18.Location = New System.Drawing.Point(544, 352)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(38, 38)
         Me.Label18.TabIndex = 20
@@ -312,8 +358,10 @@ Partial Class Form1
         'Label19
         '
         Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.SeaGreen
         Me.Label19.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(480, 344)
+        Me.Label19.ForeColor = System.Drawing.Color.White
+        Me.Label19.Location = New System.Drawing.Point(600, 352)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(32, 38)
         Me.Label19.TabIndex = 21
@@ -323,8 +371,10 @@ Partial Class Form1
         'Label20
         '
         Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.SeaGreen
         Me.Label20.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(520, 344)
+        Me.Label20.ForeColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(640, 352)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(35, 38)
         Me.Label20.TabIndex = 22
@@ -334,8 +384,10 @@ Partial Class Form1
         'Label21
         '
         Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.Color.SeaGreen
         Me.Label21.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(568, 344)
+        Me.Label21.ForeColor = System.Drawing.Color.White
+        Me.Label21.Location = New System.Drawing.Point(688, 352)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(34, 38)
         Me.Label21.TabIndex = 23
@@ -345,8 +397,10 @@ Partial Class Form1
         'Label22
         '
         Me.Label22.AutoSize = True
+        Me.Label22.BackColor = System.Drawing.Color.SeaGreen
         Me.Label22.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(608, 344)
+        Me.Label22.ForeColor = System.Drawing.Color.White
+        Me.Label22.Location = New System.Drawing.Point(728, 352)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(32, 38)
         Me.Label22.TabIndex = 24
@@ -356,8 +410,10 @@ Partial Class Form1
         'Label23
         '
         Me.Label23.AutoSize = True
+        Me.Label23.BackColor = System.Drawing.Color.SeaGreen
         Me.Label23.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(384, 384)
+        Me.Label23.ForeColor = System.Drawing.Color.White
+        Me.Label23.Location = New System.Drawing.Point(504, 392)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(41, 38)
         Me.Label23.TabIndex = 25
@@ -367,8 +423,10 @@ Partial Class Form1
         'Label24
         '
         Me.Label24.AutoSize = True
+        Me.Label24.BackColor = System.Drawing.Color.SeaGreen
         Me.Label24.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(424, 384)
+        Me.Label24.ForeColor = System.Drawing.Color.White
+        Me.Label24.Location = New System.Drawing.Point(544, 392)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(39, 38)
         Me.Label24.TabIndex = 26
@@ -378,8 +436,10 @@ Partial Class Form1
         'Label25
         '
         Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.SeaGreen
         Me.Label25.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(472, 384)
+        Me.Label25.ForeColor = System.Drawing.Color.White
+        Me.Label25.Location = New System.Drawing.Point(592, 392)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(39, 38)
         Me.Label25.TabIndex = 27
@@ -389,8 +449,10 @@ Partial Class Form1
         'Label26
         '
         Me.Label26.AutoSize = True
+        Me.Label26.BackColor = System.Drawing.Color.SeaGreen
         Me.Label26.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(520, 384)
+        Me.Label26.ForeColor = System.Drawing.Color.White
+        Me.Label26.Location = New System.Drawing.Point(640, 392)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(31, 38)
         Me.Label26.TabIndex = 28
@@ -400,8 +462,10 @@ Partial Class Form1
         'Label27
         '
         Me.Label27.AutoSize = True
+        Me.Label27.BackColor = System.Drawing.Color.SeaGreen
         Me.Label27.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(568, 384)
+        Me.Label27.ForeColor = System.Drawing.Color.White
+        Me.Label27.Location = New System.Drawing.Point(688, 392)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(41, 38)
         Me.Label27.TabIndex = 29
@@ -411,8 +475,10 @@ Partial Class Form1
         'Label28
         '
         Me.Label28.AutoSize = True
+        Me.Label28.BackColor = System.Drawing.Color.SeaGreen
         Me.Label28.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(608, 384)
+        Me.Label28.ForeColor = System.Drawing.Color.White
+        Me.Label28.Location = New System.Drawing.Point(728, 392)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(34, 38)
         Me.Label28.TabIndex = 30
@@ -422,8 +488,10 @@ Partial Class Form1
         'Label29
         '
         Me.Label29.AutoSize = True
+        Me.Label29.BackColor = System.Drawing.Color.SeaGreen
         Me.Label29.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(384, 424)
+        Me.Label29.ForeColor = System.Drawing.Color.White
+        Me.Label29.Location = New System.Drawing.Point(504, 432)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(36, 38)
         Me.Label29.TabIndex = 31
@@ -433,8 +501,10 @@ Partial Class Form1
         'Label30
         '
         Me.Label30.AutoSize = True
+        Me.Label30.BackColor = System.Drawing.Color.SeaGreen
         Me.Label30.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(424, 424)
+        Me.Label30.ForeColor = System.Drawing.Color.White
+        Me.Label30.Location = New System.Drawing.Point(544, 432)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(36, 38)
         Me.Label30.TabIndex = 32
@@ -444,8 +514,10 @@ Partial Class Form1
         'Label31
         '
         Me.Label31.AutoSize = True
+        Me.Label31.BackColor = System.Drawing.Color.SeaGreen
         Me.Label31.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(464, 424)
+        Me.Label31.ForeColor = System.Drawing.Color.White
+        Me.Label31.Location = New System.Drawing.Point(584, 432)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(37, 38)
         Me.Label31.TabIndex = 33
@@ -455,8 +527,10 @@ Partial Class Form1
         'Label32
         '
         Me.Label32.AutoSize = True
+        Me.Label32.BackColor = System.Drawing.Color.SeaGreen
         Me.Label32.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(512, 424)
+        Me.Label32.ForeColor = System.Drawing.Color.White
+        Me.Label32.Location = New System.Drawing.Point(632, 432)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(35, 38)
         Me.Label32.TabIndex = 34
@@ -466,8 +540,10 @@ Partial Class Form1
         'Label33
         '
         Me.Label33.AutoSize = True
+        Me.Label33.BackColor = System.Drawing.Color.SeaGreen
         Me.Label33.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.Location = New System.Drawing.Point(568, 424)
+        Me.Label33.ForeColor = System.Drawing.Color.White
+        Me.Label33.Location = New System.Drawing.Point(688, 432)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(45, 38)
         Me.Label33.TabIndex = 35
@@ -477,8 +553,10 @@ Partial Class Form1
         'Label34
         '
         Me.Label34.AutoSize = True
+        Me.Label34.BackColor = System.Drawing.Color.SeaGreen
         Me.Label34.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(608, 424)
+        Me.Label34.ForeColor = System.Drawing.Color.White
+        Me.Label34.Location = New System.Drawing.Point(728, 432)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(37, 38)
         Me.Label34.TabIndex = 36
@@ -488,8 +566,10 @@ Partial Class Form1
         'Label35
         '
         Me.Label35.AutoSize = True
+        Me.Label35.BackColor = System.Drawing.Color.SeaGreen
         Me.Label35.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(384, 464)
+        Me.Label35.ForeColor = System.Drawing.Color.White
+        Me.Label35.Location = New System.Drawing.Point(504, 472)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(34, 38)
         Me.Label35.TabIndex = 37
@@ -499,8 +579,10 @@ Partial Class Form1
         'Label36
         '
         Me.Label36.AutoSize = True
+        Me.Label36.BackColor = System.Drawing.Color.SeaGreen
         Me.Label36.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.Location = New System.Drawing.Point(424, 464)
+        Me.Label36.ForeColor = System.Drawing.Color.White
+        Me.Label36.Location = New System.Drawing.Point(544, 472)
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(36, 38)
         Me.Label36.TabIndex = 38
@@ -510,8 +592,10 @@ Partial Class Form1
         'Label37
         '
         Me.Label37.AutoSize = True
+        Me.Label37.BackColor = System.Drawing.Color.SeaGreen
         Me.Label37.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(464, 464)
+        Me.Label37.ForeColor = System.Drawing.Color.White
+        Me.Label37.Location = New System.Drawing.Point(584, 472)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(46, 38)
         Me.Label37.TabIndex = 39
@@ -521,8 +605,10 @@ Partial Class Form1
         'Label38
         '
         Me.Label38.AutoSize = True
+        Me.Label38.BackColor = System.Drawing.Color.SeaGreen
         Me.Label38.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(512, 464)
+        Me.Label38.ForeColor = System.Drawing.Color.White
+        Me.Label38.Location = New System.Drawing.Point(632, 472)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(39, 38)
         Me.Label38.TabIndex = 40
@@ -532,35 +618,89 @@ Partial Class Form1
         'Label39
         '
         Me.Label39.AutoSize = True
+        Me.Label39.BackColor = System.Drawing.Color.SeaGreen
         Me.Label39.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.Location = New System.Drawing.Point(568, 464)
+        Me.Label39.ForeColor = System.Drawing.Color.White
+        Me.Label39.Location = New System.Drawing.Point(688, 472)
         Me.Label39.Name = "Label39"
         Me.Label39.Size = New System.Drawing.Size(37, 38)
         Me.Label39.TabIndex = 41
         Me.Label39.Text = "Å"
         Me.Label39.Visible = False
         '
-        'btn2player
+        'Button4
         '
-        Me.btn2player.Location = New System.Drawing.Point(390, 21)
-        Me.btn2player.Name = "btn2player"
-        Me.btn2player.Size = New System.Drawing.Size(138, 29)
-        Me.btn2player.TabIndex = 51
-        Me.btn2player.Text = "2 player"
-        Me.btn2player.UseVisualStyleBackColor = True
+        Me.Button4.Location = New System.Drawing.Point(624, 264)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(138, 29)
+        Me.Button4.TabIndex = 51
+        Me.Button4.Text = "2 player"
+        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.Visible = False
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(392, 72)
+        Me.ListBox1.Location = New System.Drawing.Point(664, 0)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(176, 173)
         Me.ListBox1.TabIndex = 52
+        Me.ListBox1.Visible = False
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(80, 40)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(168, 40)
+        Me.Button3.TabIndex = 57
+        Me.Button3.Text = "Tilbake til hovedmeny"
+        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.Visible = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick4
+        Me.PictureBox13.Location = New System.Drawing.Point(80, 104)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox13.TabIndex = 56
+        Me.PictureBox13.TabStop = False
+        Me.PictureBox13.Visible = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick3
+        Me.PictureBox12.Location = New System.Drawing.Point(80, 104)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox12.TabIndex = 55
+        Me.PictureBox12.TabStop = False
+        Me.PictureBox12.Visible = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick2
+        Me.PictureBox11.Location = New System.Drawing.Point(80, 104)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox11.TabIndex = 54
+        Me.PictureBox11.TabStop = False
+        Me.PictureBox11.Visible = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick1
+        Me.PictureBox10.Location = New System.Drawing.Point(80, 104)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox10.TabIndex = 53
+        Me.PictureBox10.TabStop = False
+        Me.PictureBox10.Visible = False
         '
         'PictureBox9
         '
         Me.PictureBox9.Image = Global.hangman_enspiller.My.Resources.Resources._8_game_over
-        Me.PictureBox9.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox9.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(360, 320)
         Me.PictureBox9.TabIndex = 50
@@ -570,7 +710,7 @@ Partial Class Form1
         'PictureBox8
         '
         Me.PictureBox8.Image = Global.hangman_enspiller.My.Resources.Resources._7_kropp
-        Me.PictureBox8.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox8.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(360, 320)
         Me.PictureBox8.TabIndex = 49
@@ -580,7 +720,7 @@ Partial Class Form1
         'PictureBox7
         '
         Me.PictureBox7.Image = Global.hangman_enspiller.My.Resources.Resources._6_armer
-        Me.PictureBox7.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox7.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(360, 320)
         Me.PictureBox7.TabIndex = 48
@@ -590,7 +730,7 @@ Partial Class Form1
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.hangman_enspiller.My.Resources.Resources._5_hode
-        Me.PictureBox6.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox6.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(360, 320)
         Me.PictureBox6.TabIndex = 47
@@ -600,7 +740,7 @@ Partial Class Form1
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.hangman_enspiller.My.Resources.Resources._4_tau
-        Me.PictureBox5.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox5.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(360, 320)
         Me.PictureBox5.TabIndex = 46
@@ -610,7 +750,7 @@ Partial Class Form1
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.hangman_enspiller.My.Resources.Resources._3_galgetverr
-        Me.PictureBox4.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox4.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(360, 320)
         Me.PictureBox4.TabIndex = 45
@@ -620,7 +760,7 @@ Partial Class Form1
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.hangman_enspiller.My.Resources.Resources._2_galgebein
-        Me.PictureBox3.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox3.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(360, 320)
         Me.PictureBox3.TabIndex = 44
@@ -630,7 +770,7 @@ Partial Class Form1
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.hangman_enspiller.My.Resources.Resources._1_galgefot
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox2.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(360, 320)
         Me.PictureBox2.TabIndex = 43
@@ -640,64 +780,102 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.hangman_enspiller.My.Resources.Resources._1_start
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 88)
+        Me.PictureBox1.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(360, 320)
         Me.PictureBox1.TabIndex = 42
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
-        'PictureBox10
+        'Button5
         '
-        Me.PictureBox10.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick1
-        Me.PictureBox10.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox10.TabIndex = 53
-        Me.PictureBox10.TabStop = False
-        Me.PictureBox10.Visible = False
+        Me.Button5.Location = New System.Drawing.Point(272, 40)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(168, 40)
+        Me.Button5.TabIndex = 58
+        Me.Button5.Text = "1pl: Nytt spill"
+        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.Visible = False
         '
-        'PictureBox11
+        'Button6
         '
-        Me.PictureBox11.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick2
-        Me.PictureBox11.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox11.TabIndex = 54
-        Me.PictureBox11.TabStop = False
-        Me.PictureBox11.Visible = False
+        Me.Button6.Location = New System.Drawing.Point(336, 128)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(168, 40)
+        Me.Button6.TabIndex = 59
+        Me.Button6.Text = "H: En spiller"
+        Me.Button6.UseVisualStyleBackColor = True
         '
-        'PictureBox12
+        'Button7
         '
-        Me.PictureBox12.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick3
-        Me.PictureBox12.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox12.TabIndex = 55
-        Me.PictureBox12.TabStop = False
-        Me.PictureBox12.Visible = False
+        Me.Button7.Location = New System.Drawing.Point(336, 176)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(168, 40)
+        Me.Button7.TabIndex = 60
+        Me.Button7.Text = "H: To spillere"
+        Me.Button7.UseVisualStyleBackColor = True
         '
-        'PictureBox13
+        'Button8
         '
-        Me.PictureBox13.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick4
-        Me.PictureBox13.Location = New System.Drawing.Point(0, 88)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(360, 320)
-        Me.PictureBox13.TabIndex = 56
-        Me.PictureBox13.TabStop = False
-        Me.PictureBox13.Visible = False
+        Me.Button8.Location = New System.Drawing.Point(336, 224)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(168, 40)
+        Me.Button8.TabIndex = 61
+        Me.Button8.Text = "H: Innstillinger"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.BackColor = System.Drawing.Color.SeaGreen
+        Me.Label40.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.ForeColor = System.Drawing.Color.White
+        Me.Label40.Location = New System.Drawing.Point(344, 72)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(164, 38)
+        Me.Label40.TabIndex = 62
+        Me.Label40.Text = "HANGMAN"
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(336, 272)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(168, 40)
+        Me.Button9.TabIndex = 63
+        Me.Button9.Text = "H: Avslutt"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(448, 40)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(168, 40)
+        Me.Button10.TabIndex = 64
+        Me.Button10.Text = "2pl: Nytt spill"
+        Me.Button10.UseVisualStyleBackColor = True
+        Me.Button10.Visible = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(674, 572)
+        Me.BackgroundImage = Global.hangman_enspiller.My.Resources.Resources.sea_green
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(840, 561)
+        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Label40)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.PictureBox13)
         Me.Controls.Add(Me.PictureBox12)
         Me.Controls.Add(Me.PictureBox11)
         Me.Controls.Add(Me.PictureBox10)
         Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.btn2player)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.PictureBox7)
@@ -750,6 +928,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -759,10 +941,6 @@ Partial Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -817,11 +995,19 @@ Partial Class Form1
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
-    Friend WithEvents btn2player As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox12 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox13 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Button10 As System.Windows.Forms.Button
 
 End Class
