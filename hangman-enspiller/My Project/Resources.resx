@@ -139,17 +139,8 @@
   <data name="_2_galgebein" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2 galgebein.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_2_galgefot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2 galgefot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_3_galgebein" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3 galgebein.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="_3_galgetverr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3 galgetverr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_4_galgetverrligger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4 galgetverrligger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_4_tau" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4 tau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,29 +148,14 @@
   <data name="_5_hode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5 hode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_5_tau" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5 tau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="_6_armer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6 armer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_6_hode" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6 hode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_7_armer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7 armer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_7_kropp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7 kropp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_8_game_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8 game over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_8_kropp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8 kropp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_9_bein" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9 bein.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sea_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sea green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

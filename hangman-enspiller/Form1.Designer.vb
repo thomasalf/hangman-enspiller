@@ -103,7 +103,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(616, 200)
+        Me.Button1.Location = New System.Drawing.Point(800, 176)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(152, 23)
         Me.Button1.TabIndex = 0
@@ -113,7 +113,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(600, 240)
+        Me.Button2.Location = New System.Drawing.Point(800, 200)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(192, 23)
         Me.Button2.TabIndex = 1
@@ -630,7 +630,7 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(624, 264)
+        Me.Button4.Location = New System.Drawing.Point(800, 224)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(138, 29)
         Me.Button4.TabIndex = 51
@@ -662,7 +662,7 @@ Partial Class Form1
         Me.PictureBox13.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick4
         Me.PictureBox13.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox13.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox13.TabIndex = 56
         Me.PictureBox13.TabStop = False
         Me.PictureBox13.Visible = False
@@ -672,7 +672,7 @@ Partial Class Form1
         Me.PictureBox12.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick3
         Me.PictureBox12.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox12.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox12.TabIndex = 55
         Me.PictureBox12.TabStop = False
         Me.PictureBox12.Visible = False
@@ -682,7 +682,7 @@ Partial Class Form1
         Me.PictureBox11.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick2
         Me.PictureBox11.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox11.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox11.TabIndex = 54
         Me.PictureBox11.TabStop = False
         Me.PictureBox11.Visible = False
@@ -692,7 +692,7 @@ Partial Class Form1
         Me.PictureBox10.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick1
         Me.PictureBox10.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox10.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox10.TabIndex = 53
         Me.PictureBox10.TabStop = False
         Me.PictureBox10.Visible = False
@@ -702,7 +702,7 @@ Partial Class Form1
         Me.PictureBox9.Image = Global.hangman_enspiller.My.Resources.Resources._8_game_over
         Me.PictureBox9.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox9.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox9.TabIndex = 50
         Me.PictureBox9.TabStop = False
         Me.PictureBox9.Visible = False
@@ -712,7 +712,7 @@ Partial Class Form1
         Me.PictureBox8.Image = Global.hangman_enspiller.My.Resources.Resources._7_kropp
         Me.PictureBox8.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox8.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox8.TabIndex = 49
         Me.PictureBox8.TabStop = False
         Me.PictureBox8.Visible = False
@@ -722,7 +722,7 @@ Partial Class Form1
         Me.PictureBox7.Image = Global.hangman_enspiller.My.Resources.Resources._6_armer
         Me.PictureBox7.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox7.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox7.TabIndex = 48
         Me.PictureBox7.TabStop = False
         Me.PictureBox7.Visible = False
@@ -732,7 +732,7 @@ Partial Class Form1
         Me.PictureBox6.Image = Global.hangman_enspiller.My.Resources.Resources._5_hode
         Me.PictureBox6.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox6.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox6.TabIndex = 47
         Me.PictureBox6.TabStop = False
         Me.PictureBox6.Visible = False
@@ -742,7 +742,7 @@ Partial Class Form1
         Me.PictureBox5.Image = Global.hangman_enspiller.My.Resources.Resources._4_tau
         Me.PictureBox5.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox5.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox5.TabIndex = 46
         Me.PictureBox5.TabStop = False
         Me.PictureBox5.Visible = False
@@ -752,7 +752,7 @@ Partial Class Form1
         Me.PictureBox4.Image = Global.hangman_enspiller.My.Resources.Resources._3_galgetverr
         Me.PictureBox4.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox4.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox4.TabIndex = 45
         Me.PictureBox4.TabStop = False
         Me.PictureBox4.Visible = False
@@ -762,7 +762,7 @@ Partial Class Form1
         Me.PictureBox3.Image = Global.hangman_enspiller.My.Resources.Resources._2_galgebein
         Me.PictureBox3.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox3.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox3.TabIndex = 44
         Me.PictureBox3.TabStop = False
         Me.PictureBox3.Visible = False
@@ -772,7 +772,7 @@ Partial Class Form1
         Me.PictureBox2.Image = Global.hangman_enspiller.My.Resources.Resources._1_galgefot
         Me.PictureBox2.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox2.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox2.TabIndex = 43
         Me.PictureBox2.TabStop = False
         Me.PictureBox2.Visible = False
@@ -782,7 +782,7 @@ Partial Class Form1
         Me.PictureBox1.Image = Global.hangman_enspiller.My.Resources.Resources._1_start
         Me.PictureBox1.Location = New System.Drawing.Point(80, 104)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(360, 320)
+        Me.PictureBox1.Size = New System.Drawing.Size(352, 312)
         Me.PictureBox1.TabIndex = 42
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False

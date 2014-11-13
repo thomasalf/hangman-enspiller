@@ -121,9 +121,6 @@
     <None Include="Resources\Image1.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1 start.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\2 galgefot.png" />
   </ItemGroup>
   <ItemGroup>
@@ -148,7 +145,13 @@
     <None Include="Resources\9 bein.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sea green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\1 galgefot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 start.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2 galgebein.png" />
@@ -182,9 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\slapstick4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sea green.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
