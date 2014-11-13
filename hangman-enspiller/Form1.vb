@@ -33,7 +33,7 @@
             Me.Controls("Label" & i).Visible = False
         Next
 
-        For i = 1 To 13 'Skjuler alle pictureboxes
+        For i = 1 To 17 'Skjuler alle pictureboxes
             Me.Controls("Picturebox" & i).Visible = False
         Next
 
@@ -54,7 +54,7 @@
     Private Sub slapstickbilde()
         Dim bildenr As Integer
         Randomize()
-        bildenr = CInt(Int((4 * Rnd()) + 10))
+        bildenr = CInt(Int((8 * Rnd()) + 10))
         PictureBox9.Visible = False
         If spillAvLyd = True Then
             My.Computer.Audio.Play(My.Resources.ResourceManager.GetObject("slapstick" & bildenr - 9 & 1), AudioPlayMode.Background)
@@ -64,7 +64,7 @@
 
     'Prosedyre som nullstiller bildevisning og viser "tomt" bilde
     Private Sub nullstillBilde()
-        For i = 1 To 13
+        For i = 1 To 17
             Me.Controls("PictureBox" & i).Visible = False
         Next
         PictureBox1.Visible = True
@@ -129,29 +129,29 @@
             Case 8
                 PictureBox1.Visible = True
             Case 7
-                PictureBox1.Visible = False
                 PictureBox2.Visible = True
+                PictureBox1.Visible = False
             Case 6
-                PictureBox2.Visible = False
                 PictureBox3.Visible = True
+                PictureBox2.Visible = False
             Case 5
-                PictureBox3.Visible = False
                 PictureBox4.Visible = True
+                PictureBox3.Visible = False
             Case 4
-                PictureBox4.Visible = False
                 PictureBox5.Visible = True
+                PictureBox4.Visible = False
             Case 3
-                PictureBox5.Visible = False
                 PictureBox6.Visible = True
+                PictureBox5.Visible = False
             Case 2
-                PictureBox6.Visible = False
                 PictureBox7.Visible = True
+                PictureBox6.Visible = False
             Case 1
-                PictureBox7.Visible = False
                 PictureBox8.Visible = True
+                PictureBox7.Visible = False
             Case 0
-                PictureBox8.Visible = False
                 PictureBox9.Visible = True
+                PictureBox8.Visible = False
                 MsgBox("Du har tapt og har blitt hengt..")
                 skjulBokstavsky()
                 slapstickbilde()

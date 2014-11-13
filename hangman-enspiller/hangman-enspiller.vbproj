@@ -247,6 +247,30 @@
   <ItemGroup>
     <None Include="Resources\kritt15.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slapstick8.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

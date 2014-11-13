@@ -372,6 +372,82 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property slapstick5() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("slapstick5", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property slapstick51() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("slapstick51", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property slapstick6() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("slapstick6", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property slapstick61() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("slapstick61", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property slapstick7() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("slapstick7", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property slapstick71() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("slapstick71", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property slapstick8() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("slapstick8", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property slapstick81() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("slapstick81", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         '''</summary>
         Friend ReadOnly Property testlyd() As System.IO.UnmanagedMemoryStream

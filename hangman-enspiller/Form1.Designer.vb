@@ -89,6 +89,10 @@ Partial Class Form1
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Button11 = New System.Windows.Forms.Button()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,6 +106,10 @@ Partial Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -924,6 +932,46 @@ Partial Class Form1
         Me.Button11.Text = "Start spillet"
         Me.Button11.UseVisualStyleBackColor = False
         '
+        'PictureBox14
+        '
+        Me.PictureBox14.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick5
+        Me.PictureBox14.Location = New System.Drawing.Point(80, 104)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(352, 312)
+        Me.PictureBox14.TabIndex = 66
+        Me.PictureBox14.TabStop = False
+        Me.PictureBox14.Visible = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick6
+        Me.PictureBox15.Location = New System.Drawing.Point(80, 104)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(352, 312)
+        Me.PictureBox15.TabIndex = 67
+        Me.PictureBox15.TabStop = False
+        Me.PictureBox15.Visible = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick7
+        Me.PictureBox16.Location = New System.Drawing.Point(80, 104)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(352, 312)
+        Me.PictureBox16.TabIndex = 68
+        Me.PictureBox16.TabStop = False
+        Me.PictureBox16.Visible = False
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.Image = Global.hangman_enspiller.My.Resources.Resources.slapstick8
+        Me.PictureBox17.Location = New System.Drawing.Point(80, 104)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(352, 312)
+        Me.PictureBox17.TabIndex = 69
+        Me.PictureBox17.TabStop = False
+        Me.PictureBox17.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -931,6 +979,10 @@ Partial Class Form1
         Me.BackgroundImage = Global.hangman_enspiller.My.Resources.Resources.sea_green
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(840, 561)
+        Me.Controls.Add(Me.PictureBox17)
+        Me.Controls.Add(Me.PictureBox16)
+        Me.Controls.Add(Me.PictureBox15)
+        Me.Controls.Add(Me.PictureBox14)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
@@ -1011,6 +1063,10 @@ Partial Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1081,5 +1137,9 @@ Partial Class Form1
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Button11 As System.Windows.Forms.Button
+    Friend WithEvents PictureBox14 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox16 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
 
 End Class
