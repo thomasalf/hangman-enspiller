@@ -1,7 +1,7 @@
 ﻿Public Class Form1
 
     Private spillmatrise() As Char 'Ordet som brukes i denne runden
-    Private ordliste(10) As String 'Alle ordene som kan brukes i spillet
+    Private ordliste(71) As String 'Alle ordene som kan brukes i spillet
 
     Private spillordlengde As Integer 'Lengden på ordet som brukes i denne runden
     Private liv As Integer 'Antallet liv/streker på tegningen spilleren har til rådighet hver runde
@@ -10,17 +10,79 @@
 
     'Prosedyre som laster inn ordlisten i matrisen
     Private Sub lastInnOrdliste()
-        ordliste(0) = "A"
-        ordliste(1) = "AB"
-        ordliste(2) = "ABC"
-        ordliste(3) = "ABCD"
-        ordliste(4) = "ABCDE"
-        ordliste(5) = "ABCDEF"
-        ordliste(6) = "ABCDEFA"
-        ordliste(7) = "ABCCDGAD"
-        ordliste(8) = "ABHAIJKLM"
-        ordliste(9) = "AABBHHGGAA"
-        ordliste(10) = "BBCCDDKKLLM"
+        ordliste(0) = "BLEIE"
+        ordliste(1) = "BART"
+        ordliste(2) = "FJERNSYN"
+        ordliste(3) = "BIL"
+        ordliste(4) = "TELEFON"
+        ordliste(5) = "ARKITEKT"
+        ordliste(6) = "VINFLASKE"
+        ordliste(7) = "LETTØL"
+        ordliste(8) = "KALKUN"
+        ordliste(9) = "HÅRBØRSTE"
+        ordliste(10) = "BRUNKREM"
+        ordliste(11) = "SMØRBUKK"
+        ordliste(12) = "TASTATUR"
+        ordliste(13) = "WINDOWS"
+        ordliste(14) = "DATAMASKIN"
+        ordliste(15) = "SKJERM"
+        ordliste(16) = "BOK"
+        ordliste(17) = "HULLMASKIN"
+        ordliste(18) = "PENAL"
+        ordliste(19) = "BLYANT"
+        ordliste(20) = "GENSER"
+        ordliste(21) = "TRENING"
+        ordliste(22) = "LAMPEOLJE"
+        ordliste(23) = "HÅNDBOK"
+        ordliste(24) = "HÅNDKREM"
+        ordliste(25) = "ARBEIDSØKT"
+        ordliste(26) = "BENKPRESS"
+        ordliste(27) = "TIMEPLAN"
+        ordliste(28) = "SKOLEKLASSE"
+        ordliste(29) = "DØRBLAD"
+        ordliste(30) = "PARKETT"
+        ordliste(31) = "SPEILBILDE"
+        ordliste(32) = "MINNEPENN"
+        ordliste(33) = "PROSESSOR"
+        ordliste(34) = "HOVEDKORT"
+        ordliste(35) = "INFORMATIKK"
+        ordliste(36) = "TEKNOLOGI"
+        ordliste(37) = "UTDANNING"
+        ordliste(38) = "SKOLEGANG"
+        ordliste(39) = "SKRIVEPULT"
+        ordliste(40) = "BRØDSKIVE"
+        ordliste(41) = "BILMERKE"
+        ordliste(42) = "MUSMATTE"
+        ordliste(43) = "BOKHYLLE"
+        ordliste(44) = "LYSPÆRE"
+        ordliste(45) = "STIKKONTAKT"
+        ordliste(46) = "RINGPERM"
+        ordliste(47) = "LISTVERK"
+        ordliste(48) = "PLANKE"
+        ordliste(49) = "HAMMER"
+        ordliste(50) = "SAGBLAD"
+        ordliste(51) = "TAKRENNE"
+        ordliste(52) = "SPRINGVANN"
+        ordliste(53) = "ØLGLASS"
+        ordliste(54) = "MALTØL"
+        ordliste(55) = "JULEØL"
+        ordliste(56) = "BRYGGERI"
+        ordliste(57) = "GJÆRINGSTANK"
+        ordliste(58) = "VASKEMASKIN"
+        ordliste(59) = "KLESVASK"
+        ordliste(60) = "BUNAD"
+        ordliste(61) = "SLIPS"
+        ordliste(62) = "STIKKPRØVE"
+        ordliste(63) = "SYKEHUS"
+        ordliste(64) = "AVTALE"
+        ordliste(65) = "BILDEKK"
+        ordliste(66) = "EGENSKAPER"
+        ordliste(67) = "VERDI"
+        ordliste(68) = "NØYAKTIG"
+        ordliste(69) = "VIKTIGPER"
+        ordliste(70) = "AVANSERT"
+        ordliste(71) = "KORSTOG"
+
     End Sub
 
     'Prosedyre som skjuler alle labels, knapper o.l.
@@ -486,5 +548,9 @@
         spillAvLyd = True
         Button11.Visible = False
         visHovedmeny()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

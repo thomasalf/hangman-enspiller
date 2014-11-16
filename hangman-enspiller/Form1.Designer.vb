@@ -978,7 +978,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.hangman_enspiller.My.Resources.Resources.sea_green
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(840, 561)
+        Me.ClientSize = New System.Drawing.Size(861, 574)
         Me.Controls.Add(Me.PictureBox17)
         Me.Controls.Add(Me.PictureBox16)
         Me.Controls.Add(Me.PictureBox15)
@@ -1048,6 +1048,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
